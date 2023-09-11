@@ -1,0 +1,35 @@
+@import '../utilities/variables';
+
+.header{
+    &__title{
+        color: $first-color;
+        font-family: $first-font, 'Arial', sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+    }
+    &__nav{
+
+
+        & ul{
+            color: $second-color;
+            font-family: $second-font, 'Arial', sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: 3.28px;
+            margin-top: 40px;
+            margin-left: 25px;
+            display: none;
+        }
+
+        & li {
+            list-style: none;
+            line-height: 15px;
+            margin-bottom: 14px;
+        }
+
+        & a{
+            text-decoration: none;
+        }
+        
+    }
+}
