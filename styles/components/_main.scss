@@ -1,29 +1,29 @@
 @import "../utilities/variables";
-@import '../utilities/functions';
+@import "../utilities/functions";
 
 .main {
   &__container {
     @include margin(0, auto);
-    @include size(82.6%, empty());
+    @include size(82.6%, null);
     max-width: 440px;
     &--title {
       @include margin(0, auto);
-      @include fontFamily($first-font, 'Arial', sans-serif);
+      @include fontFamily($first-font, "Arial", sans-serif);
       @include fontSize(35px, 400);
       text-align: center;
     }
     &--subtitle {
-      @include fontFamily($second-font, 'Arial', sans-serif);
+      @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(16px, 400);
       text-align: center;
       padding-top: 20px;
     }
     &--button {
       margin-top: 30px;
-      @include size(100%, empty());
+      @include size(100%, null);
       @include padding(22px, 0);
       @include shadow(5px, 10px, 14px, 0px, rgba(7, 172, 230, 0.29));
-      @include fontFamily($second-font, 'Arial', sans-serif);
+      @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(16px, 700);
       background-color: $first-color;
       color: $seventh-color;
@@ -32,10 +32,13 @@
     }
   }
   &__img {
-    margin-top: 51px;
-    max-width: 100%;
-    background-size: cover;
-    transform: scale(1.95, 1.95) translateY(50px);
+      @include marginExact(82px, 0, 60px, 0);
 
+    & img {
+      @include paddingExact(32px, 0, 37px, 0);
+      opacity: 0.5;
+      max-width: 100%;
+      transform: scale(1.95, 1.95);
+    }
   }
 }

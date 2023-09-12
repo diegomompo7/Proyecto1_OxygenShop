@@ -15,8 +15,8 @@
     &__nav{
 
         & svg {
-            @include position(relative, empty(), empty(), 70px, 86.6%);
-            @include size(20px, empty());
+            @include position(relative,  null , null, 70px, 86.6%);
+            @include size(20px, null);
             fill: $sixth-color;
         }
 

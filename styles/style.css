@@ -75,12 +75,9 @@ body {
 }
 .header__nav svg {
   position: relative;
-  top: empty();
-  right: empty();
   bottom: 70px;
   left: 86.6%;
   width: 20px;
-  height: empty();
   fill: #07ACE6;
 }
 .header__nav ul {
@@ -104,7 +101,6 @@ body {
 .main__container {
   margin: 0 auto;
   width: 82.6%;
-  height: empty();
   max-width: 440px;
 }
 .main__container--title {
@@ -124,7 +120,6 @@ body {
 .main__container--button {
   margin-top: 30px;
   width: 100%;
-  height: empty();
   padding: 22px 0;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   font-family: "Open Sans", "Arial", sans-serif;
@@ -136,8 +131,24 @@ body {
   border-style: none;
 }
 .main__img {
-  margin-top: 51px;
+  margin: 82px 0 60px 0;
+}
+.main__img img {
+  padding: 32px 0 37px 0;
+  opacity: 0.5;
   max-width: 100%;
-  background-size: cover;
-  transform: scale(1.95, 1.95) translateY(50px);
+  transform: scale(1.95, 1.95);
+}
+
+.sales {
+  background-color: greenyellow;
+  width: 82.6%;
+  margin: 0 auto;
+  max-width: 440px;
+}
+.sales__title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
