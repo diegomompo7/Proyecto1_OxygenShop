@@ -1,37 +1,32 @@
 @import '../utilities/variables';
+@import '../utilities/functions';
 
 .header{
-    height: 70px;
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.29);
-    width: 100%;
+    @include shadow(0px, 3px, 8px, 0px, rgba(0,0,0,0.29));
+    @include size(100%, 70px);
     margin-bottom: 100px;
 
     &__title{
+        @include fontSize(32px, 300);
+        @include paddingExact(17px, 0, 0, 25px);
+        @include fontFamily($first-font, 'Arial', sans-serif);
         color: $first-color;
-        font-family: $first-font, 'Arial', sans-serif;
-        font-weight: 300;
-        font-size: 32px;
-        padding: 17px 0 0 25px;
     }
     &__nav{
 
         & svg {
-            position: relative;
-            bottom: 70px;
-            left: 86.6%;
-            width:20px;
-            fill: $sixth-color
+            @include position(relative, empty(), empty(), 70px, 86.6%);
+            @include size(20px, empty());
+            fill: $sixth-color;
         }
 
 
         & ul{
+            @include fontSize(11px, 700);
+            @include marginExact(40px, 0, 0, 25px);
+            @include fontFamily($second-font, 'Arial', sans-serif);
             color: $second-color;
-            font-family: $second-font, 'Arial', sans-serif;
-            font-weight: 700;
-            font-size: 11px;
             letter-spacing: 3.28px;
-            margin-top: 40px;
-            margin-left: 25px;
             display: none;
         }
 
