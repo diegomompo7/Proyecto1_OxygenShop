@@ -141,7 +141,6 @@ body {
 }
 
 .sales {
-  background-color: greenyellow;
   width: 82.6%;
   margin: 0 auto;
   max-width: 440px;
@@ -151,4 +150,95 @@ body {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
+}
+.sales__list {
+  margin-top: 25px;
+}
+.sales__list--item {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.sales__list--item h3 {
+  display: block;
+  margin-top: 14px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 5.96px;
+}
+.sales__list--item p {
+  margin-top: 20px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.widthRed {
+  max-width: 117px;
+  width: 100%;
+}
+
+.widthBlue {
+  max-width: 176px;
+  width: 100%;
+}
+
+.widthGreen {
+  max-width: 163px;
+  width: 100%;
+}
+
+.circle-icon {
+  height: 63px;
+  display: block;
+  margin: 0 auto;
+}
+
+.item__img {
+  width: 100%;
+  height: 70px;
+}
+.item__img--person {
+  width: 44px;
+  position: relative;
+  bottom: 60px;
+  left: 25px;
+}
+.item__img--eye {
+  width: 65px;
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+}
+.item__img--catalog {
+  width: 52px;
+  position: relative;
+  bottom: 56px;
+  left: 25px;
+}
+
+.widthRed {
+  width: 33%;
+}
+
+.red {
+  fill: #FB3B64;
+}
+
+.widthBlue {
+  width: 44%;
+}
+
+.blue {
+  fill: #08A6E4;
+}
+
+.widthGreen {
+  width: 33%;
+}
+
+.green {
+  fill: #55DFB4;
 }/*# sourceMappingURL=style.css.map */

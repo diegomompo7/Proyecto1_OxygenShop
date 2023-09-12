@@ -1,14 +1,89 @@
 @import "../utilities/variables";
-@import '../utilities/functions';
+@import "../utilities/functions";
 
-.sales{
-    background-color: greenyellow;
-    @include size(82.6%, null);
-    @include margin(0, auto);
-    max-width: 440px;
-    &__title{
-        @include fontFamily($first-font, 'Arial', sans-serif);
-        @include fontSize(30px, 300);
-        text-align: center;
+.sales {
+  @include size(82.6%, null);
+  @include margin(0, auto);
+  max-width: 440px;
+  &__title {
+    @include fontFamily($first-font, "Arial", sans-serif);
+    @include fontSize(30px, 300);
+    text-align: center;
+  }
+  &__list {
+    margin-top: 25px;
+
+    &--item {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      & h3 {
+        display: block;
+        margin-top: 14px;
+        @include fontFamily("Raleway", "Arial", sans-serif);
+        @include fontSize(20px, 800);
+        letter-spacing: 5.96px;
+      }
+      & p {
+        margin-top: 20px;
+        @include fontFamily("Raleway", "Arial", sans-serif);
+        @include fontSize(17px, 400);
+        margin-bottom: 25px;
+      }
     }
+  }
+}
+
+.widthRed {
+    max-width: 117px;
+    width: 100%;
+}
+.widthBlue {
+    max-width: 176px;
+    width: 100%;
+}
+.widthGreen {
+    max-width: 163px;
+    width: 100%;
+}
+
+.circle-icon {
+  height: 63px;
+  display: block;
+  margin: 0 auto;
+}
+
+.item__img {
+  @include size(100%, 70px);
+  &--person {
+    @include size(44px, null);
+    @include position(relative, null, null, 60px, 25px);
+  }
+  &--eye {
+    @include size(65px, null);
+    @include position(relative, null, null, 50px, 20px);
+  }
+  &--catalog {
+    @include size(52px, null);
+    @include position(relative, null, null, 56px, 25px);
+  }
+}
+
+.widthRed {
+  @include size(33%, null);
+}
+.red {
+  fill: $third-color;
+}
+.widthBlue {
+  @include size(44%, null);
+}
+.blue {
+  fill: $first-color;
+}
+.widthGreen {
+  @include size(33%, null);
+}
+.green {
+  fill: $fourth-color;
 }
