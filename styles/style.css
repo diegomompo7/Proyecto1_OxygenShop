@@ -241,4 +241,49 @@ body {
 
 .green {
   fill: #55DFB4;
+}
+
+.benefits {
+  background-color: #F7F7F7;
+}
+.benefits__container {
+  background-color: lime;
+  max-width: 313px;
+  margin: 0 auto;
+}
+.benefits__container--text {
+  margin-left: 21px;
+}
+.benefits__container--text h1 {
+  width: 87.2%;
+  margin-top: 14px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.benefits__container--text p {
+  margin-top: 46px;
+  margin-bottom: 27px;
+  padding-bottom: 27px;
+  width: 86.6%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.benefits__container--macbook {
+  height: 150px;
+}
+.benefits__container--macbook img {
+  width: 192px;
+  position: relative;
+  margin-top: 37px;
+  margin-left: 20%;
+  z-index: 1;
+}
+.benefits__container--macbook svg {
+  height: 90px;
+  position: relative;
+  z-index: 0;
+  bottom: 150px;
+  left: 180px;
 }/*# sourceMappingURL=style.css.map */

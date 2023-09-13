@@ -1,0 +1,58 @@
+@import "../utilities/variables";
+@import "../utilities/functions";
+
+.benefits {
+  background-color: $ninth-color;
+
+  &__container {
+    background-color: lime;
+    max-width: 313px;
+    margin: 0 auto;
+
+    &--text {
+      margin-left: 21px;
+
+      & h1 {
+        width: 87.2%;
+        margin-top: 14px;
+        @include fontFamily("Raleway", "Arial", sans-serif);
+        @include fontSize(30px, 400);
+      }
+
+      & p {
+        margin-top: 46px;
+        margin-bottom: 27px;
+        padding-bottom: 27px;
+        width: 86.6%;
+        @include fontFamily("Open Sans", "Arial", sans-serif);
+        @include fontSize(14px, 400);
+      }
+    }
+
+    &--macbook{
+
+        height: 150px;
+
+        & img{
+            width: 192px;
+            position: relative;
+            margin-top: 37px;
+            margin-left: 20%;
+            z-index: 1;
+        }
+        & svg {
+            height: 90px;
+            position: relative;
+            z-index: 0;
+            bottom: 150px;
+            left: 180px;
+        }
+    }
+    &--phone{
+        
+    }
+    &--trumpet{
+        
+    }
+  }
+}
