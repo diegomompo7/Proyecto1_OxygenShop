@@ -4,14 +4,13 @@
 .sales {
   @include size(82.6%, null);
   @include margin(0, auto);
-  max-width: 440px;
   &__title {
     @include fontFamily($first-font, "Arial", sans-serif);
-    @include fontSize(30px, 300);
+    @include fontSize(1.875rem, 300);
     text-align: center;
   }
   &__list {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 
     &--item {
       display: block;
@@ -19,71 +18,39 @@
       text-align: center;
       & h3 {
         display: block;
-        margin-top: 14px;
+        margin-top: 0.875rem;
         @include fontFamily("Raleway", "Arial", sans-serif);
-        @include fontSize(20px, 800);
-        letter-spacing: 5.96px;
+        @include fontSize(1.25rem, 800);
+        letter-spacing: 0.3725rem;
       }
       & p {
-        margin-top: 20px;
+        margin-top: 1.25rem;
         @include fontFamily("Raleway", "Arial", sans-serif);
-        @include fontSize(17px, 400);
-        margin-bottom: 25px;
+        @include fontSize(1.0625, 400);
+        margin-bottom: 1.5625rem;
       }
     }
   }
 }
-
-.widthRed {
-    max-width: 117px;
-    width: 100%;
-}
-.widthBlue {
-    max-width: 176px;
-    width: 100%;
-}
-.widthGreen {
-    max-width: 163px;
-    width: 100%;
-}
-
-.circle-icon {
-  height: 63px;
-  display: block;
-  margin: 0 auto;
-}
-
 .item__img {
-  @include size(100%, 70px);
+  @include size(100%, 4.375rem);
+
+  &--circle {
+    height: 3.9375rem;
+    display: block;
+    margin: 0 auto;
+  }
+
   &--person {
-    @include size(44px, null);
-    @include position(relative, null, null, 60px, 25px);
+    @include size(2.75rem, null);
+    @include position(relative, null, null, 3.75rem, 1.5625rem);
   }
   &--eye {
     @include size(65px, null);
-    @include position(relative, null, null, 50px, 20px);
+    @include position(relative, null, null, 3.125rem, 1.25rem);
   }
   &--catalog {
     @include size(52px, null);
-    @include position(relative, null, null, 56px, 25px);
+    @include position(relative, null, null, 3.5rem, 1.5625rem);
   }
-}
-
-.widthRed {
-  @include size(33%, null);
-}
-.red {
-  fill: $third-color;
-}
-.widthBlue {
-  @include size(44%, null);
-}
-.blue {
-  fill: $first-color;
-}
-.widthGreen {
-  @include size(33%, null);
-}
-.green {
-  fill: $fourth-color;
 }

@@ -8,7 +8,7 @@
 
     &__title{
         @include fontSize(2rem, 300);
-        @include paddingExact(1.06rem, 0, 0, 1.56rem);
+        @include paddingExact(1.0625rem, 0, 0, 1.5625rem);
         @include fontFamily($first-font, 'Arial', sans-serif);
         color: $first-color;
     }
