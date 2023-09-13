@@ -20,7 +20,6 @@
       }
 
       & p {
-        margin-top: 46px;
         margin-bottom: 27px;
         padding-bottom: 27px;
         width: 86.6%;
@@ -49,10 +48,57 @@
         }
     }
     &--phone{
+
+        height: 170px;
+
+        & img{
+            width: 175px;
+            position: relative;
+            margin-top: 42px;
+            margin-left: 25%;
+            z-index: 1;
+        }
+        & svg {
+            height: 131px;
+            position: relative;
+            z-index: 0;
+            bottom: 170px;
+            left: 100px;
+        }
+        
         
     }
     &--trumpet{
+
+        height: 195px;
+
+        & img{
+            width: 175px;
+            position: relative;
+            margin-top: 42px;
+            margin-left: 25%;
+            z-index: 1;
+        }
+        & svg {
+            width: 400px;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+        }
         
     }
   }
+}
+.macbook p{
+    margin-top: 46px;
+}
+.phone p{
+    margin-top: 18px;
+}
+.trumpet{
+    padding-top: 31px;
+
+    & p {
+        margin-top: 20px;
+    }
 }
