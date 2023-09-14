@@ -23,13 +23,12 @@
         }
 
         &--cost{
-            width: 54%;
+            width: 49%;
             float: left;
             position: relative;
             top: 4.375rem;
             text-align: center;
             margin: 0 auto;
-            background-color: aqua;
             & h3{
                 @include fontFamily('Raleway', 'Arial', sans-serif);
                 @include fontSize(1.25rem, 700);
@@ -44,9 +43,8 @@
             }
         }
         &--features{
-            width: 46%;
+            width: 51%;
             float: left;
-            background-color: lime;
 
 
             & ul {
@@ -67,10 +65,12 @@
             @include fontSize(0.8125rem, 600);
             color: $seventh-color;
             border-radius: 23px;
-            width: 51.1%;
+            width: 9.375rem;
             height: 3.125rem;
             cursor: pointer;
             border-style: none;
+            position: relative;
+            left: 60px;
         }
         }
     }
