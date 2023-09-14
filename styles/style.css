@@ -310,8 +310,8 @@ body {
 .prices__plans--items {
   width: 78.1%;
   height: 15.6875rem;
-  border-radius: 1.125rem;
   margin: 0 auto;
+  border-radius: 1.125rem;
   overflow: visible;
   margin-bottom: 2.25rem;
 }
@@ -320,11 +320,11 @@ body {
 }
 .prices__plans--items--cost {
   width: 49%;
-  float: left;
   position: relative;
   top: 4.375rem;
-  text-align: center;
   margin: 0 auto;
+  float: left;
+  text-align: center;
 }
 .prices__plans--items--cost h3 {
   font-family: "Raleway", "Arial", sans-serif;
@@ -359,14 +359,14 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #FFFFFF;
-  border-radius: 23px;
   width: 9.375rem;
   height: 3.125rem;
-  cursor: pointer;
-  border-style: none;
   position: relative;
   left: 60px;
+  color: #FFFFFF;
+  border-radius: 23px;
+  cursor: pointer;
+  border-style: none;
 }
 
 .basic {
@@ -410,10 +410,61 @@ body {
 
 .contact {
   margin-top: 4rem;
-  margin-left: 30rem;
+  margin-left: 1.875rem;
 }
 .contact__questions--title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
+  margin-bottom: 0.3125rem;
+}
+.contact__questions--description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2.375rem;
+}
+.contact__questions--details {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #A5A5A5;
+  margin-bottom: 4rem;
+}
+.contact__questions--details img {
+  position: relative;
+  top: 5px;
+  width: 1.375rem;
+  margin-right: 0.4375rem;
+}
+.contact__form {
+  width: 83.2%;
+}
+.contact__form--name, .contact__form--email {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: #08A6E4;
+  letter-spacing: 0.205rem;
+  margin-bottom: 41px;
+}
+.contact__form--name--input, .contact__form--email--input {
+  width: 100%;
+  margin-bottom: 2.5625rem;
+  border: none;
+  border-bottom: 1px solid #95989A;
+}
+.contact__form--checkbox {
+  width: 1.5rem;
+}
+.contact__form--conditions {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  width: 88.7%;
+  position: relative;
+  bottom: 1.875rem;
+  left: 2.1875rem;
+  color: #707070;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
