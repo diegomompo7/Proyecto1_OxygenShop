@@ -19,13 +19,13 @@
       & h3 {
         display: block;
         margin-top: 0.875rem;
-        @include fontFamily("Raleway", "Arial", sans-serif);
+        @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.25rem, 800);
         letter-spacing: 0.3725rem;
       }
       & p {
         margin-top: 1.25rem;
-        @include fontFamily("Raleway", "Arial", sans-serif);
+        @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.0625, 400);
         margin-bottom: 1.5625rem;
       }

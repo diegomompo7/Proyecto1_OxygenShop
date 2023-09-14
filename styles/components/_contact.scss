@@ -1,61 +1,72 @@
 @import "../utilities/variables";
 @import "../utilities/functions";
 
-.contact{
-    margin-top: 4rem;
-    margin-left: 1.875rem;
-    &__questions{
-        &--title{
-            @include fontFamily('Raleway', 'Arial', sans-serif);
-            @include fontSize(2.5rem, 400);
-            margin-bottom: 0.3125rem;
-        }
-        &--description{
-            @include fontFamily('Open Sans', 'Arial', sans-serif);
-            @include fontSize(1rem, 400);
-            margin-bottom: 2.375rem;
-        }
-        &--details{
-            @include fontFamily('Open Sans', 'Arial', sans-serif);
-            @include fontSize(1rem, 500);
-            color: $eighth-color;
-            margin-bottom: 4rem;
-            & img {
-                @include position(relative, 5px, null, null, null);
-                @include size(1.375rem, null);
-                margin-right: 0.4375rem;
-            }
-        }
+.contact {
+  margin-top: 4rem;
+  margin-left: 1.875rem;
+  &__questions {
+    &--title {
+      @include fontFamily($first-font, "Arial", sans-serif);
+      @include fontSize(2.5rem, 400);
+      margin-bottom: 0.3125rem;
+    }
+    &--description {
+      @include fontFamily($second-font, "Arial", sans-serif);
+      @include fontSize(1rem, 400);
+      margin-bottom: 2.375rem;
+    }
+    &--details {
+      @include fontFamily($second-font, "Arial", sans-serif);
+      @include fontSize(1rem, 500);
+      color: $eighth-color;
+      margin-bottom: 4rem;
+      & img {
+        @include position(relative, 5px, null, null, null);
+        @include size(1.375rem, null);
+        margin-right: 0.4375rem;
+      }
+    }
+  }
+  &__form {
+    @include size(83.2%, null);
+
+    &--name,
+    &--email {
+      @include fontFamily($second-font, "Arial", sans-serif);
+      @include fontSize(0.6875rem, 500);
+      color: $first-color;
+      letter-spacing: 0.205rem;
+      margin-bottom: 41px;
+
+      &--input {
+        @include size(100%, null);
+        margin-bottom: 2.5625rem;
+        border: none;
+        border-bottom: 1px solid $tenth-color;
+      }
+    }
+    &--checkbox {
+      @include size(1.5rem, null);
+    }
+    &--conditions {
+      @include fontFamily($second-font, "Arial", sans-serif);
+      @include fontSize(0.75rem, 400);
+      @include size(88.7%, null);
+      @include position(relative, null, null, 1.875rem, 2.1875rem);
+      color: $eleventh-color;
+      position: relative;
+    }
+    &--send{
+        @include size(72.4%, 3.5625rem);
+        @include fontFamily($second-font, "Arial", sans-serif);
+        @include fontSize(0.8125rem, 600);
+        @include shadow(5px, 10px, 14px, 0px, rgba(7,172,230,0.29));
+        @include position(relative, null, null, null, 5.3125rem);
+        border-radius: 2.1875rem;
+        box-shadow: 5px 10px 14px 0px rgba(7,172,230,0.29);
+        background-color: $first-color;
+        color: $seventh-color;
 
     }
-    &__form{
-        @include size(83.2%, null);
-
-        &--name, &--email{
-            @include fontFamily('Open Sans', 'Arial', sans-serif);
-            @include fontSize(0.6875rem, 500);
-            color: $first-color;
-            letter-spacing: 0.205rem;
-            margin-bottom:41px;
-        
-        &--input{
-            @include size(100%, null);
-            margin-bottom: 2.5625rem;
-            border: none;
-            border-bottom: 1px solid $tenth-color;
-        }
-    }
-    &--checkbox{
-        @include size(1.5rem, null);
-    }
-    &--conditions{
-        @include fontFamily('Open Sans', 'Arial', sans-serif);
-        @include fontSize(0.75rem, 400);
-        @include size(88.7%, null);
-        @include position(relative, null, null, 1.875rem, 2.1875rem);
-        color: $eleventh-color;
-        position: relative;
-
-    }
-    }
+  }
 }

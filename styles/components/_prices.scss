@@ -4,7 +4,7 @@
 .prices {
   margin-top: 3.375rem;
   &__title {
-    @include fontFamily("Raleway", "Arial", sans-serif);
+    @include fontFamily($first-font, "Arial", sans-serif);
     @include fontSize(2.25rem, 400);
     text-align: center;
   }
@@ -28,15 +28,15 @@
         float: left;
         text-align: center;
         & h3 {
-          @include fontFamily("Raleway", "Arial", sans-serif);
+          @include fontFamily($first-font, "Arial", sans-serif);
           @include fontSize(1.25rem, 700);
         }
         & h1 {
-          @include fontFamily("Open Sans", "Arial", sans-serif);
+          @include fontFamily($second-font, "Arial", sans-serif);
           @include fontSize(2.875rem, 300);
         }
         & p {
-          @include fontFamily("Raleway", "Arial", sans-serif);
+          @include fontFamily($first-font, "Arial", sans-serif);
           @include fontSize(0.72rem, 700);
         }
       }
@@ -51,13 +51,13 @@
         & li {
           padding-bottom: 1.25rem;
           list-style: none;
-          @include fontFamily("Open Sans", "Arial", sans-serif);
+          @include fontFamily($second-font, "Arial", sans-serif);
           @include fontSize(0.875rem, 300);
         }
       }
 
       & button {
-        @include fontFamily("Open Sans", "Arial", sans-serif);
+        @include fontFamily($second-font, "Arial", sans-serif);
         @include fontSize(0.8125rem, 600);
         @include size(9.375rem, 3.125rem);
         @include position(relative, null, null, null, 60px);

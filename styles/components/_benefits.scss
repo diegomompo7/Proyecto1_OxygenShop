@@ -15,14 +15,14 @@
 
       & h1 {
         @include size(87.2%, null);
-        @include fontFamily("Raleway", "Arial", sans-serif);
+        @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.875rem, 400);
         margin-top: 0.875rem;
       }
 
       & p {
         @include size(86.6%, null);
-        @include fontFamily("Open Sans", "Arial", sans-serif);
+        @include fontFamily($second-font, "Arial", sans-serif);
         @include fontSize(0.875rem, 400);
         margin-bottom: 1.6875rem;
         padding-bottom: 1.6875rem;
