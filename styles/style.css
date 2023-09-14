@@ -208,7 +208,6 @@ body {
 .benefits {
   background-color: #F7F7F7;
   padding-top: 3.5rem;
-  height: 86.25rem;
 }
 .benefits__container {
   background-color: #FFFFFF;
@@ -294,4 +293,117 @@ body {
 }
 .trumpet p {
   margin-top: 1.25rem;
+}
+
+.prices {
+  margin-top: 3.375rem;
+}
+.prices__title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+.prices__plans {
+  margin-top: 0.875rem;
+}
+.prices__plans--items {
+  width: 78.1%;
+  height: 15.6875rem;
+  border-radius: 1.125rem;
+  margin: 0 auto;
+  overflow: visible;
+  margin-bottom: 2.25rem;
+}
+.prices__plans--items:hover {
+  width: 90.4%;
+}
+.prices__plans--items--cost {
+  width: 54%;
+  float: left;
+  position: relative;
+  top: 4.375rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: aqua;
+}
+.prices__plans--items--cost h3 {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.prices__plans--items--cost h1 {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+}
+.prices__plans--items--cost p {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.prices__plans--items--features {
+  width: 46%;
+  float: left;
+  background-color: lime;
+}
+.prices__plans--items--features ul {
+  margin-top: 1.5625rem;
+}
+.prices__plans--items--features li {
+  padding-bottom: 1.25rem;
+  list-style: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.prices__plans--items button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  border-radius: 23px;
+  width: 51.1%;
+  height: 3.125rem;
+  cursor: pointer;
+  border-style: none;
+}
+
+.basic {
+  border: 1px solid #EB476E;
+}
+.basic:hover {
+  box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.29);
+}
+.basic h1 {
+  color: #EB476E;
+}
+.basic button {
+  background-color: #EB476E;
+}
+
+.professional {
+  border: 1px solid #07ACE6;
+}
+.professional:hover {
+  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
+}
+.professional h1 {
+  color: #07ACE6;
+}
+.professional button {
+  background-color: #07ACE6;
+}
+
+.premium {
+  border: 1px solid #55DFB4;
+}
+.premium:hover {
+  box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.29);
+}
+.premium h1 {
+  color: #55DFB4;
+}
+.premium button {
+  background-color: #55DFB4;
 }/*# sourceMappingURL=style.css.map */

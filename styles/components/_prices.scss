@@ -1,0 +1,124 @@
+@import "../utilities/variables";
+@import "../utilities/functions";
+
+.prices{
+    margin-top: 3.375rem;
+    &__title{
+        @include fontFamily('Raleway', 'Arial', sans-serif);
+        @include fontSize(2.25rem, 400);
+        text-align: center;
+    }
+    &__plans{
+        margin-top: 0.875rem;
+
+        &--items{ 
+        width: 78.1%;
+        height: 15.6875rem;
+        border-radius: 1.125rem;
+        margin: 0 auto;
+        overflow: visible;
+        margin-bottom: 2.25rem;
+        &:hover{
+            width: 90.4%;
+        }
+
+        &--cost{
+            width: 54%;
+            float: left;
+            position: relative;
+            top: 4.375rem;
+            text-align: center;
+            margin: 0 auto;
+            background-color: aqua;
+            & h3{
+                @include fontFamily('Raleway', 'Arial', sans-serif);
+                @include fontSize(1.25rem, 700);
+            }
+            & h1 {
+                @include fontFamily('Open Sans', 'Arial', sans-serif);
+                @include fontSize(2.875rem, 300);
+            }
+            & p {
+                @include fontFamily('Raleway', 'Arial', sans-serif);
+                @include fontSize(0.72rem, 700);
+            }
+        }
+        &--features{
+            width: 46%;
+            float: left;
+            background-color: lime;
+
+
+            & ul {
+                margin-top: 1.5625rem;
+                
+            }
+
+            & li {
+                padding-bottom: 1.25rem;
+                list-style: none;
+                @include fontFamily('Open Sans', 'Arial', sans-serif);
+                @include fontSize(0.875rem, 300);
+            }
+        }
+
+        & button{
+            @include fontFamily('Open Sans', 'Arial', sans-serif);
+            @include fontSize(0.8125rem, 600);
+            color: $seventh-color;
+            border-radius: 23px;
+            width: 51.1%;
+            height: 3.125rem;
+            cursor: pointer;
+            border-style: none;
+        }
+        }
+    }
+}
+.basic {
+    border: 1px solid $fifth-color;
+
+    &:hover{
+        @include shadow(5px, 10px, 27px, 0px,  rgba(235,71,110,0.29));
+    }
+
+    & h1 {
+    color: $fifth-color;
+    }
+    & button {
+        background-color: $fifth-color;
+    }
+}
+.professional {
+    border: 1px solid $sixth-color;
+
+    &:hover{
+        @include shadow(5px, 10px, 27px, 0px, rgba(7,172,230,0.29));
+    }
+
+    & h1 {
+    color: $sixth-color;
+    }
+
+    & button {
+        background-color: $sixth-color;
+    }
+    
+
+
+}
+.premium {
+    border: 1px solid $fourth-color;
+
+    &:hover{
+        @include shadow(5px, 10px, 27px, 0px, rgba(85,223,180,0.29));
+    }
+
+    & h1 {
+    color: $fourth-color;
+    }
+
+    & button {
+        background-color: $fourth-color;
+    }
+}
