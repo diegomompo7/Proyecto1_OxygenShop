@@ -1,5 +1,7 @@
 @import "../utilities/variables";
 @import "../utilities/functions";
+@import "../utilities/mixins";
+
 
 .sales {
   @include size(82.6%, null);
@@ -8,9 +10,18 @@
     @include fontFamily($first-font, "Arial", sans-serif);
     @include fontSize(1.875rem, 300);
     text-align: center;
+    @include desktop(){
+      @include fontSize(2.25rem, 400);
+    }
   }
   &__list {
     margin-top: 1.5625rem;
+
+    @include desktop(){
+      display: flex;
+      margin-top: 6.5625rem;
+      margin-bottom: 8.25rem;
+    }
 
     &--item {
       display: block;
@@ -46,11 +57,22 @@
     @include position(relative, null, null, 3.75rem, 1.5625rem);
   }
   &--eye {
-    @include size(65px, null);
+    @include size(4.0625rem, null);
     @include position(relative, null, null, 3.125rem, 1.25rem);
   }
   &--catalog {
-    @include size(52px, null);
+    @include size(3.25rem, null);
     @include position(relative, null, null, 3.5rem, 1.5625rem);
   }
 }
+.person{
+  @include size(7.3125rem, null);
+}
+.eye{
+  @include size(11rem, null);
+}
+.catalog{
+  @include size(10.1875rem, null);
+}
+
+

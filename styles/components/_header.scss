@@ -1,5 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/functions";
+@import "../utilities/mixins";
 
 .header {
   @include shadow(0px, 3px, 8px, 0px, rgba(0, 0, 0, 0.29));
@@ -14,39 +15,64 @@
     color: $first-color;
   }
   &__nav {
+    @include fontSize(0.6875rem, 700);
+    @include fontFamily($second-font, "Arial", sans-serif);
+    color: $second-color;
+    letter-spacing: 0.205rem;
     & svg {
       @include position(relative, null, null, 4.375rem, 89.1%);
       @include size(1.25rem, null);
       fill: $sixth-color;
       cursor: pointer;
+
+      @include desktop() {
+        display: none;
+      }
     }
 
-      & svg:hover + &--list {
-        display: block;
-      }
-      
+    & svg:hover + &--mobile {
+      display: block;
+    }
 
-      &--list {
-        @include fontSize(0.6875rem, 700);
-        @include fontFamily($second-font, "Arial", sans-serif);
-        @include position(fixed, 4.375rem, null, null, null);
-        @include size(100%, 10.9375rem);
-        @include shadow(0px, 4px, 4px, 0px, rgba(0,0,0,0.29));
-        background-color: $seventh-color;
-        color: $second-color;
-        letter-spacing: 0.205rem;
-        display: none;
-
-        & li {
+    &--mobile {
+      display: none;
+      @include size(100%, 10.9375rem);
+      @include shadow(0px, 4px, 4px, 0px, rgba(0, 0, 0, 0.29));
+      @include position(fixed, 4.375rem, null, null, null);
+      background-color: $seventh-color;
+      & li {
         @include position(relative, 2.5rem, null, null, 1.5625rem);
-          list-style: none;
-          line-height: 0.9375rem;
-          margin-bottom: 0.875rem;
-        }
+        list-style: none;
+        line-height: 0.9375rem;
+        margin-bottom: 0.875rem;
+      }
 
-        & a {
-          text-decoration: none;
+      & a {
+        text-decoration: none;
+      }
+    }
+    &--desktop {
+      display: none;
+      @include position(relative, null, 7%, 1.6875rem, null);
+
+      @include desktop() {
+        display: flex;
+        justify-content: end;
+      }
+
+      & li {
+        list-style: none;
+        margin-left: 5.9375rem;
+        padding-bottom: 1.5625rem;
+
+        &:hover{
+            border-bottom: 4px solid $first-color;
         }
+      }
+
+      & a {
+        text-decoration: none;
       }
     }
   }
+}

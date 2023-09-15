@@ -15,6 +15,10 @@
       @include fontFamily($first-font, "Arial", sans-serif);
       @include fontSize(2.1875rem, 400);
       text-align: center;
+
+      @include desktop(){
+        @include fontSize(3.0625rem, 400);
+      }
     }
     &--subtitle {
       @include fontFamily($second-font, "Arial", sans-serif);
@@ -44,6 +48,12 @@
       height: 20.625rem;
       object-fit: cover;
       object-position: center;
+
+      @include desktop(){
+        @include paddingExact(0, 0, 0, 0);
+        object-position: 100%;
+        height: 100%;
+      }
     }
   }
 }
