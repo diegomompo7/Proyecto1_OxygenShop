@@ -297,17 +297,25 @@ body {
 .benefits {
   background-color: #F7F7F7;
   padding-top: 3.5rem;
-  height: 81.25rem;
 }
 .benefits__container {
   margin: 0 auto;
   width: 83.4%;
   background-color: #FFFFFF;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 23.4375rem) and (max-width: 999px) {
   .benefits__container {
     max-width: 23.4375rem;
     width: 100%;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .benefits__container {
+    max-width: 1124px;
+    width: 100%;
+    height: 23.125rem;
+    display: flex;
+    margin-bottom: 2.3125rem;
   }
 }
 .benefits__container--text {
@@ -320,6 +328,13 @@ body {
   font-weight: 400;
   margin-top: 0.875rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--text h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+  }
+}
 .benefits__container--text p {
   width: 86.6%;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -327,6 +342,15 @@ body {
   font-weight: 400;
   margin-bottom: 1.6875rem;
   padding-bottom: 1.6875rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--text p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 26rem;
+    padding-bottom: 3.125rem;
+    border-bottom: 4px solid;
+  }
 }
 .benefits__container--macbook {
   width: 100%;
@@ -339,12 +363,39 @@ body {
   padding-top: 2.3125rem;
   z-index: 1;
 }
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--macbook--img {
+    width: 24.125rem;
+    position: relative;
+    top: 5rem;
+    margin-right: 3.125rem;
+  }
+}
 .benefits__container--macbook--rectanguleRed {
   width: 4.375rem;
   position: relative;
   right: 0.625rem;
   bottom: 3.4375rem;
   z-index: 0;
+}
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--macbook--rectanguleRed {
+    display: none;
+  }
+}
+.benefits__container--macbook--rectanguleRed2 {
+  visibility: hidden;
+  width: 4.375rem;
+  position: relative;
+  bottom: 11.4375rem;
+  left: 17.5rem;
+  z-index: 0;
+}
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--macbook--rectanguleRed2 {
+    visibility: visible;
+    width: 11.25rem;
+  }
 }
 .benefits__container--phone {
   width: 100%;
@@ -357,16 +408,37 @@ body {
   left: 3.75rem;
   z-index: 1;
 }
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--phone--img {
+    width: 26.625rem;
+    margin-left: 12.5rem;
+  }
+}
 .benefits__container--phone--circleBlue {
   width: 5.625rem;
   position: relative;
   right: 3.75rem;
   z-index: 0;
 }
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--phone--circleBlue {
+    width: 20rem;
+    position: relative;
+    bottom: 19.5rem;
+    left: 5rem;
+  }
+}
 .benefits__container--trumpet {
   height: 12.18175rem;
   background-color: #55DFB4;
   border-radius: 5px;
+}
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--trumpet {
+    width: 50%;
+    height: 100%;
+    margin-left: 3.8125rem;
+  }
 }
 .benefits__container--trumpet--img {
   width: 15.3125rem;
@@ -375,20 +447,74 @@ body {
   position: relative;
   z-index: 1;
 }
+@media screen and (min-width: 62.5rem) {
+  .benefits__container--trumpet--img {
+    width: 265px;
+    height: 207px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+  }
+}
 
+.macbook {
+  flex-direction: row-reverse;
+}
+@media screen and (min-width: 62.5rem) {
+  .macbook {
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .macbook h1 {
+    padding-top: 91px;
+  }
+}
 .macbook p {
   margin-top: 2.875rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .macbook p {
+    border-color: #FB3B64;
+    margin-right: 111px;
+  }
+}
 
+@media screen and (min-width: 62.5rem) {
+  .phone h1 {
+    margin-top: 69px;
+  }
+}
 .phone p {
   margin-top: 1.125rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .phone p {
+    margin-right: 20px;
+    border-color: #08A6E4;
+  }
 }
 
 .trumpet {
   padding-top: 1.9375rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .trumpet {
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .trumpet h1 {
+    margin-top: 69px;
+  }
+}
 .trumpet p {
   margin-top: 1.25rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .trumpet p {
+    border-color: #55DFB4;
+  }
 }
 
 .prices {

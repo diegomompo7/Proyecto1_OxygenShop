@@ -5,16 +5,24 @@
 .benefits {
   background-color: $ninth-color;
   padding-top: 3.5rem;
-  height: 81.25rem;
+
 
   &__container {
     @include margin(0, auto);
     @include size(83.4%, null);
     background-color: $seventh-color;
-    @include min375(){
-        max-width: 23.4375rem;
-        @include size(100%, null);
-      }
+    @include min375() {
+      max-width: 23.4375rem;
+      @include size(100%, null);
+    }
+
+    @include desktop() {
+      max-width: 1124px;
+      width: 100%;
+      height: 23.125rem;
+      display: flex;
+      margin-bottom: 2.3125rem;
+    }
 
     &--text {
       margin-left: 1.3125rem;
@@ -24,6 +32,10 @@
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.875rem, 400);
         margin-top: 0.875rem;
+        @include desktop() {
+          @include fontSize(2.25rem, 400);
+          margin-bottom: 1.875rem;
+        }
       }
 
       & p {
@@ -32,74 +44,154 @@
         @include fontSize(0.875rem, 400);
         margin-bottom: 1.6875rem;
         padding-bottom: 1.6875rem;
+        @include desktop() {
+          @include fontSize(1rem, 400);
+          width: 26rem;
+          padding-bottom: 3.125rem;
+          border-bottom: 4px solid;
+        }
       }
     }
 
-    &--macbook{
+    &--macbook {
+      @include size(100%, null);
+      display: inline;
+      @include desktop() {
+      }
 
-        @include size(100%, null);
-        display: inline;
+      &--img {
+        @include size(10.75rem, null);
+        @include position(relative, null, null, null, 3.125rem);
+        padding-top: 2.3125rem;
+        z-index: 1;
 
-        &--img{
-            @include size(10.75rem, null);
-            @include position(relative, null, null, null,3.125rem);
-            padding-top: 2.3125rem;
-            z-index: 1;
+        @include desktop() {
+          @include size(24.125rem, null);
+          @include position(relative, 5rem, null, null, null);
+          margin-right: 3.125rem;
         }
-        &--rectanguleRed{
-            @include size(4.375rem, null);
-            @include position(relative, null, 0.625rem, 3.4375rem, null);
-            z-index: 0;
+      }
+      &--rectanguleRed {
+        @include size(4.375rem, null);
+        @include position(relative, null, 0.625rem, 3.4375rem, null);
+        z-index: 0;
+
+        @include desktop() {
+          display: none;
+        }
+      }
+      &--rectanguleRed2 {
+        visibility: hidden;
+        @include size(4.375rem, null);
+        @include position(relative, null, null, 11.4375rem, 17.5rem);
+        z-index: 0;
+
+        @include desktop() {
+          visibility: visible;
+          @include size(11.25rem, null);
+        }
+      }
+    }
+    &--phone {
+      @include size(100%, null);
+      @include size(null, 8.125rem);
+
+      &--img {
+        @include size(8.125rem, null);
+        @include position(relative, 1.875rem, null, null, 3.75rem);
+        z-index: 1;
+
+        @include desktop() {
+          width: 26.625rem;
+          margin-left: 12.5rem;
+        }
+      }
+      &--circleBlue {
+        @include size(5.625rem, null);
+        @include position(relative, null, 3.75rem, null, null);
+        z-index: 0;
+
+        @include desktop() {
+          width: 20rem;
+          @include position(relative, null, null, 19.5rem, 5rem);
+        }
+      }
+    }
     
-        }
-
-    }
-    &--phone{
-
-        @include size(100%, null);
-        @include size(null, 8.125rem);
-
-        &--img{
-            @include size(8.125rem, null);
-            @include position(relative, 1.875rem, null, null, 3.75rem);
-            z-index: 1;
-
-        }
-        &--circleBlue{
-            @include size(5.625rem, null);
-            @include position(relative, null, 3.75rem, null, null);
-            z-index: 0
-
-        }
-
-
-        
-        
-    }
     &--trumpet{
         @include size(null, 12.18175rem);
-        background-color: #55DFB4;
+        background-color: $fourth-color;
         border-radius: 5px;
+
+        @include desktop(){
+            @include size(50%, 100%);
+            margin-left: 3.8125rem;
+        }
 
         &--img{
             @include size(15.3125rem, null);
-            @include position(relative, 50px, null, null, null);
+            @include position(relative, 3,125rem, null, null, null);
             position: relative;
             z-index: 1;
+
+            @include desktop(){
+                @include size(16.5625rem, 12.9375rem);
+                @include position(relative, 6.25rem, null, null, 6.25rem);
+            }
         }    
     }
   }
 }
-.macbook p{
-    margin-top: 2.875rem;
-}
-.phone p{
-    margin-top: 1.125rem;
-}
-.trumpet{
-    padding-top: 1.9375rem;
+.macbook {
+  flex-direction: row-reverse;
+  @include desktop() {
+    padding-left: 2.1875rem;
+  }
 
-    & p {
-        margin-top: 1.25rem;
+  & h1 {
+    @include desktop() {
+      padding-top: 5.6875rem;
     }
+  }
+  & p {
+    margin-top: 2.875rem;
+    @include desktop() {
+      border-color: $third-color;
+      margin-right: 6.9375rem;
+    }
+  }
+}
+
+.phone {
+  & h1 {
+    @include desktop() {
+    margin-top: 4.3125rem;
+    }
+  }
+  & p {
+    margin-top: 1.125rem;
+    @include desktop() {
+    margin-right: 1.25rem;
+    border-color: $first-color;
+    }
+  }
+}
+.trumpet {
+  padding-top: 1.9375rem;
+  @include desktop() {
+    padding-left: 2.1875rem;
+  }
+
+  & h1 {
+    @include desktop() {
+    margin-top: 4,3125rem;
+    }
+  }
+
+  & p {
+    margin-top: 1.25rem;
+    @include desktop(){
+    border-color: $fourth-color;
+    }
+  }
 }
