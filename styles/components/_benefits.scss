@@ -1,14 +1,20 @@
 @import "../utilities/variables";
 @import "../utilities/functions";
+@import "../utilities/mixins";
 
 .benefits {
   background-color: $ninth-color;
   padding-top: 3.5rem;
+  height: 81.25rem;
 
   &__container {
     @include margin(0, auto);
     @include size(83.4%, null);
     background-color: $seventh-color;
+    @include min375(){
+        max-width: 23.4375rem;
+        @include size(100%, null);
+      }
 
     &--text {
       margin-left: 1.3125rem;

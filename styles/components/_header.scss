@@ -1,44 +1,52 @@
-@import '../utilities/variables';
-@import '../utilities/functions';
+@import "../utilities/variables";
+@import "../utilities/functions";
 
-.header{
-    @include shadow(0px, 3px, 8px, 0px, rgba(0,0,0,0.29));
-    @include size(100%, 4.375rem);
-    margin-bottom: 6.25rem;
+.header {
+  @include shadow(0px, 3px, 8px, 0px, rgba(0, 0, 0, 0.29));
+  @include size(100%, 4.375rem);
+  margin-bottom: 6.25rem;
 
-    &__title{
-        @include fontSize(2rem, 300);
-        @include paddingExact(1.0625rem, 0, 0, 1.5625rem);
-        @include fontFamily($first-font, 'Arial', sans-serif);
-        color: $first-color;
+  &__title {
+    @include fontSize(2rem, 300);
+    @include fontFamily($first-font, "Arial", sans-serif);
+    @include position(relative, null, null, null, 5%);
+    padding-top: 1.0625rem;
+    color: $first-color;
+  }
+  &__nav {
+    & svg {
+      @include position(relative, null, null, 4.375rem, 89.1%);
+      @include size(1.25rem, null);
+      fill: $sixth-color;
+      cursor: pointer;
     }
-    &__nav{
 
-        & svg {
-            @include position(relative,  null , null, 4.375rem, 89.1%);
-            @include size(1.25rem, null);
-            fill: $sixth-color;
-        }
+      & svg:hover + &--list {
+        display: block;
+      }
+      
 
-
-        & ul{
-            @include fontSize(11px, 700);
-            @include marginExact(40px, 0, 0, 25px);
-            @include fontFamily($second-font, 'Arial', sans-serif);
-            color: $second-color;
-            letter-spacing: 3.28px;
-            display: none;
-        }
+      &--list {
+        @include fontSize(0.6875rem, 700);
+        @include fontFamily($second-font, "Arial", sans-serif);
+        @include position(fixed, 4.375rem, null, null, null);
+        @include size(100%, 10.9375rem);
+        @include shadow(0px, 4px, 4px, 0px, rgba(0,0,0,0.29));
+        background-color: $seventh-color;
+        color: $second-color;
+        letter-spacing: 0.205rem;
+        display: none;
 
         & li {
-            list-style: none;
-            line-height: 15px;
-            margin-bottom: 14px;
+        @include position(relative, 2.5rem, null, null, 1.5625rem);
+          list-style: none;
+          line-height: 0.9375rem;
+          margin-bottom: 0.875rem;
         }
 
-        & a{
-            text-decoration: none;
+        & a {
+          text-decoration: none;
         }
-        
+      }
     }
-}
+  }

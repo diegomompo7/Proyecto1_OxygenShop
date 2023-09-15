@@ -70,8 +70,10 @@ body {
 .header__title {
   font-size: 2rem;
   font-weight: 300;
-  padding: 1.0625rem 0 0 1.5625rem;
   font-family: "Raleway", "Arial", sans-serif;
+  position: relative;
+  left: 5%;
+  padding-top: 1.0625rem;
   color: #08A6E4;
 }
 .header__nav svg {
@@ -80,28 +82,46 @@ body {
   left: 89.1%;
   width: 1.25rem;
   fill: #07ACE6;
+  cursor: pointer;
 }
-.header__nav ul {
-  font-size: 11px;
+.header__nav svg:hover + .header__nav--list {
+  display: block;
+}
+.header__nav--list {
+  font-size: 0.6875rem;
   font-weight: 700;
-  margin: 40px 0 0 25px;
   font-family: "Open Sans", "Arial", sans-serif;
+  position: fixed;
+  top: 4.375rem;
+  width: 100%;
+  height: 10.9375rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
+  background-color: #FFFFFF;
   color: #000000;
-  letter-spacing: 3.28px;
+  letter-spacing: 0.205rem;
   display: none;
 }
-.header__nav li {
+.header__nav--list li {
+  position: relative;
+  top: 2.5rem;
+  left: 1.5625rem;
   list-style: none;
-  line-height: 15px;
-  margin-bottom: 14px;
+  line-height: 0.9375rem;
+  margin-bottom: 0.875rem;
 }
-.header__nav a {
+.header__nav--list a {
   text-decoration: none;
 }
 
 .main__container {
   margin: 0 auto;
   width: 82.6%;
+}
+@media screen and (min-width: 27.5rem) {
+  .main__container {
+    max-width: 27.5rem;
+    width: 100%;
+  }
 }
 .main__container--title {
   margin: 0 auto;
@@ -208,11 +228,18 @@ body {
 .benefits {
   background-color: #F7F7F7;
   padding-top: 3.5rem;
+  height: 81.25rem;
 }
 .benefits__container {
   margin: 0 auto;
   width: 83.4%;
   background-color: #FFFFFF;
+}
+@media screen and (min-width: 23.4375rem) {
+  .benefits__container {
+    max-width: 23.4375rem;
+    width: 100%;
+  }
 }
 .benefits__container--text {
   margin-left: 1.3125rem;
@@ -315,8 +342,20 @@ body {
   overflow: visible;
   margin-bottom: 2.25rem;
 }
+@media screen and (min-width: 23.25rem) {
+  .prices__plans--items {
+    max-width: 23.25rem;
+    width: 100%;
+  }
+}
 .prices__plans--items:hover {
   width: 90.4%;
+}
+@media screen and (min-width: 25.3125rem) {
+  .prices__plans--items:hover {
+    max-width: 25.3125rem;
+    width: 100%;
+  }
 }
 .prices__plans--items--cost {
   width: 49%;
@@ -368,12 +407,21 @@ body {
   cursor: pointer;
   border-style: none;
 }
+@media screen and (min-width: 23.25rem) {
+  .prices__plans--items button {
+    position: relative;
+    left: 90px;
+  }
+}
 
 .basic {
   border: 1px solid #EB476E;
 }
 .basic:hover {
   box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.29);
+}
+.basic:hover .basic__button {
+  box-shadow: 5px 10px 14px 0px rgba(235, 71, 110, 0.29);
 }
 .basic h1 {
   color: #EB476E;
@@ -388,6 +436,9 @@ body {
 .professional:hover {
   box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
 }
+.professional:hover .professional__button {
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+}
 .professional h1 {
   color: #07ACE6;
 }
@@ -401,16 +452,25 @@ body {
 .premium:hover {
   box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.29);
 }
+.premium:hover .premium__button {
+  box-shadow: 5px 10px 14px 0px rgba(85, 223, 180, 0.29);
+}
 .premium h1 {
   color: #55DFB4;
 }
-.premium button {
+.premium__button {
   background-color: #55DFB4;
 }
 
 .contact {
-  margin-top: 4rem;
-  margin-left: 1.875rem;
+  margin: 0 auto;
+  padding: 4rem 1.875rem;
+}
+@media screen and (min-width: 27.5rem) {
+  .contact {
+    max-width: 27.5rem;
+    width: 100%;
+  }
 }
 .contact__questions--title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -492,7 +552,8 @@ body {
 }
 .footer__text {
   width: 73%;
-  padding-left: 1.0625rem;
+  position: relative;
+  left: 5%;
 }
 .footer__text--title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -511,7 +572,7 @@ body {
   width: 27%;
   position: relative;
   bottom: 2.1875rem;
-  left: 16.25rem;
+  left: 68.7%;
   text-align: right;
 }
 .footer__rrss img {

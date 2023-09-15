@@ -17,8 +17,18 @@
       border-radius: 1.125rem;
       overflow: visible;
       margin-bottom: 2.25rem;
+
+      @include min372(){
+        max-width: 23.25rem;
+        @include size(100%, null);
+      }
+
       &:hover {
         @include size(90.4%, null);
+        @include min405(){
+          max-width: 25.3125rem;
+          @include size(100%, null);
+        }
       }
 
       &--cost {
@@ -61,6 +71,10 @@
         @include fontSize(0.8125rem, 600);
         @include size(9.375rem, 3.125rem);
         @include position(relative, null, null, null, 60px);
+
+        @include min372(){
+          @include position(relative, null, null, null,90px);
+        }
         color: $seventh-color;
         border-radius: 23px;
         cursor: pointer;
@@ -74,6 +88,12 @@
 
   &:hover {
     @include shadow(5px, 10px, 27px, 0px, rgba(235, 71, 110, 0.29));
+  }
+
+  &:hover{
+    .basic__button {
+      @include shadow(5px, 10px, 14px, 0px, rgba(235, 71, 110, 0.29));
+    }
   }
 
   & h1 {
@@ -90,6 +110,12 @@
     @include shadow(5px, 10px, 27px, 0px, rgba(7, 172, 230, 0.29));
   }
 
+  &:hover{
+    .professional__button {
+      @include shadow(5px, 10px, 14px, 0px, rgba(7, 172, 230, 0.29));
+    }
+  }
+
   & h1 {
     color: $sixth-color;
   }
@@ -101,15 +127,21 @@
 .premium {
   border: 1px solid $fourth-color;
 
-  &:hover {
+  &:hover{
     @include shadow(5px, 10px, 27px, 0px, rgba(85, 223, 180, 0.29));
+  }
+
+  &:hover{
+    .premium__button {
+      @include shadow(5px, 10px, 14px, 0px, rgba(85, 223, 180, 0.29));
+    }
   }
 
   & h1 {
     color: $fourth-color;
   }
 
-  & button {
+  &__button {
     background-color: $fourth-color;
   }
 }

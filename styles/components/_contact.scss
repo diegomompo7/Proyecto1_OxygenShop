@@ -1,9 +1,14 @@
 @import "../utilities/variables";
 @import "../utilities/functions";
+@import "../utilities/mixins";
 
 .contact {
-  margin-top: 4rem;
-  margin-left: 1.875rem;
+  @include margin (0 , auto);
+  @include paddingExact(4rem, null, null, 1.875rem);
+  @include min440(){
+    max-width: 27.5rem;
+    @include size(100%, null);
+  }
   &__questions {
     &--title {
       @include fontFamily($first-font, "Arial", sans-serif);

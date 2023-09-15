@@ -9,7 +9,7 @@
 
     &__text{
         @include size(73%, null);
-        padding-left: 1.0625rem;
+        @include position(relative, null, null, null, 5%);
         &--title{
             @include fontFamily($first-font, "Arial", sans-serif);
             @include fontSize(1.625rem, 300);
@@ -25,7 +25,7 @@
 
     &__rrss{
         @include size(27%, null);
-        @include position(relative, null, null, 2.1875rem, 16.25rem);
+        @include position(relative, null, null, 2.1875rem, 68.7%);
         text-align: right;
         & img{
             @include size(1.5rem, null);
