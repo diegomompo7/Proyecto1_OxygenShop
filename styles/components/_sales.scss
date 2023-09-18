@@ -24,21 +24,21 @@
     }
 
     &--item {
+      @include margin(0, auto);
       display: block;
-      margin: 0 auto;
       text-align: center;
       & h3 {
-        display: block;
-        margin-top: 0.875rem;
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.25rem, 800);
+        display: block;
+        margin-top: 0.875rem;
         letter-spacing: 0.3725rem;
       }
       & p {
-        margin-top: 1.25rem;
         @include fontFamily($first-font, "Arial", sans-serif);
-        @include fontSize(1.0625, 400);
-        margin-bottom: 1.5625rem;
+        @include fontSize(1.0625rem, 400);
+        @include marginExact(1.25rem, null, 1.5625rem, null);
+
       }
     }
   }
@@ -47,9 +47,9 @@
   @include size(100%, 4.375rem);
 
   &--circle {
-    height: 3.9375rem;
+    @include size(null, 3.9375rem);
+    @include margin(0,auto);
     display: block;
-    margin: 0 auto;
   }
 
   &--person {

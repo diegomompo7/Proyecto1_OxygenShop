@@ -6,12 +6,13 @@
   @include margin (0 , auto);
   @include paddingExact(4rem, null, null, 1.875rem);
   @include min440(){
-    max-width: 27.5rem;
     @include size(100%, null);
+    max-width: 27.5rem;
+
   }
   @include desktop(){
-    max-width: 896px;
     @include size(100%, null);
+    max-width: 56rem;
     display: flex;
 
   }
@@ -42,10 +43,10 @@
         display: inline-flex;
       }
       & p {
-        margin-right: 20px;
+        margin-right: 1.25rem;
       }
       & img {
-        @include position(relative, 5px, null, null, null);
+        @include position(relative, 0.3125rem, null, null, null);
         @include size(1.375rem, null);
         margin-right: 0.4375rem;
       }
@@ -63,8 +64,7 @@
       @include fontSize(0.6875rem, 500);
       color: $first-color;
       letter-spacing: 0.205rem;
-      margin-bottom: 41px;
-
+      margin-bottom: 2.5625rem;
       &--input {
         @include size(100%, null);
         margin-bottom: 2.5625rem;
@@ -73,14 +73,10 @@
       }
     }
     &--checkbox {
-      width: 24px;
-      height: 24px;
+      @include size(1.5rem, 1.5rem);
       border: 1px solid $tenth-color;
       border-radius: 4px;
 
-      &:checked{
-        background-color: red;
-      }
     }
     &--conditions {
       @include fontFamily($second-font, "Arial", sans-serif);
@@ -100,14 +96,13 @@
         @include shadow(5px, 10px, 14px, 0px, rgba(7,172,230,0.29));
         @include position(relative, null, null, null, 5.3125rem);
         border-radius: 2.1875rem;
-        box-shadow: 5px 10px 14px 0px rgba(7,172,230,0.29);
         background-color: $first-color;
         color: $seventh-color;
 
         @include desktop(){
-          max-width: 226px;
+          max-width: 14.125rem;
           @include size(100%, null);
-          @include position(relative, null, null, null, 180px);
+          @include position(relative, null, null, null, 11.25rem);
         }
       
     }

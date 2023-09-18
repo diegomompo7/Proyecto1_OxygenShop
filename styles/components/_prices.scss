@@ -13,10 +13,7 @@
     @include desktop(){
 
       display: flex;
-      margin-top: 68px;
-      margin-bottom: 130px;
-      margin-left: 16%;
-      margin-right: 16%;
+      @include marginExact(4.25rem, 8.125rem, 16%, 16%);
       
     }
 
@@ -32,12 +29,11 @@
       }
 
       @include desktop(){
-        max-width: 1266px;
+        @include size(29%, 30.3125rem);
+        max-width: 79.125rem;
         display: flex;
-        width: 29%;
         flex-direction: column;
         align-items: center;
-        height: 30.3125rem;
         margin-right: 5.3%;
         
       }
@@ -49,8 +45,7 @@
           @include size(100%, null);
         }
         @include desktop(){
-        width: 32%;
-         height: 31.25rem;
+          @include size(32%, 31.25rem);
         }
       }
 
@@ -75,8 +70,8 @@
 
         @include desktop(){
           @include position(relative, 0, null, null, null);
-          margin-top: 34px;
-          width: 100%
+          @include size(100%, null);
+          margin-top: 2.125rem;
         }
       }
       &--features {
@@ -93,10 +88,10 @@
         }
 
         & li {
-          padding-bottom: 1.25rem;
-          list-style: none;
           @include fontFamily($second-font, "Arial", sans-serif);
           @include fontSize(0.875rem, 300);
+          padding-bottom: 1.25rem;
+          list-style: none;
 
           @include desktop(){
             padding-bottom: 2.8vh;
@@ -108,19 +103,19 @@
         @include fontFamily($second-font, "Arial", sans-serif);
         @include fontSize(0.8125rem, 600);
         @include size(9.375rem, 3.125rem);
-        @include position(relative, null, null, null, 60px);
+        @include position(relative, null, null, null, 3.75rem);
 
         @include min372(){
-          @include position(relative, null, null, null,90px);
+          @include position(relative, null, null, null,5.625rem);
         }
         @include desktop(){
           @include position(relative, 3.125rem, null, null, null);
-          margin-right: 170px;
+          margin-right: 10.625rem;
           justify-content: center;
           
         }
         color: $seventh-color;
-        border-radius: 23px;
+        border-radius: 1.475rem;
         cursor: pointer;
         border-style: none;
 
@@ -144,7 +139,7 @@
   &:hover{
     .basic__cost {
       @include desktop(){
-        margin-bottom: 72px;
+        margin-bottom: 4.5rem;
       }
     }
   }
@@ -152,7 +147,7 @@
   & h1 {
     color: $fifth-color;
     @include desktop(){
-      margin-bottom: 61px;
+      margin-bottom: 3.8125rem;
     }
   }
   & button {
@@ -175,7 +170,7 @@
   &:hover{
     .professional__description {
       @include desktop(){
-        margin-bottom: 61px;
+        margin-bottom: 3.8125rem;
       }
     }
   }
@@ -185,7 +180,7 @@
     }
   & p {
     @include desktop(){
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem;
     }
   }
 
@@ -209,7 +204,7 @@
   &:hover{
     .premium__description {
       @include desktop(){
-        margin-bottom: 61px;
+        margin-bottom: 3.8125rem;
       }
     }
   }
@@ -219,7 +214,7 @@
   }
   & p {
     @include desktop(){
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem;
     }
   }
 

@@ -16,6 +16,7 @@
     @include desktop(){
       @include position(relative, null, null, null, 8.6%);
     }
+
   } 
   &__nav {
     @include fontSize(0.6875rem, 700);

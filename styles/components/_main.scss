@@ -7,8 +7,8 @@
     @include margin(0, auto);
     @include size(82.6%, null);
     @include min440(){
-      max-width: 27.5rem;
       @include size(100%, null);
+      max-width: 27.5rem;
     }
     &--title {
       @include margin(0, auto);
@@ -30,7 +30,7 @@
       margin-top: 1.875rem;
       @include size(100%, null);
       @include padding(1.35rem, 0);
-      @include shadow(5px, 10px, 14px, 0px, rgba(7, 172, 230, 0.29));
+      @include shadow(0.3125rem, 0.625, 14px, 0, rgba(7, 172, 230, 0.29));
       @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(1rem, 700);
       background-color: $first-color;
