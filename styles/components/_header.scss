@@ -53,6 +53,7 @@
 
       & a {
         text-decoration: none;
+        color: black;
       }
     }
     &--desktop {
@@ -68,6 +69,7 @@
         list-style: none;
         margin-left: 5.9375rem;
         padding-bottom: 1.5625rem;
+        text-decoration: black;
 
         &:hover{
             border-bottom: 4px solid $first-color;
@@ -76,6 +78,7 @@
 
       & a {
         text-decoration: none;
+        color: black;
       }
     }
   }

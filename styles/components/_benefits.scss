@@ -6,6 +6,10 @@
   background-color: $ninth-color;
   @include paddingExact(3.5rem, 0, 6.25rem, 0);
 
+  @include desktop{
+    padding-top: 6.6875rem
+  }
+
 
   &__container {
     @include margin(0, auto);
@@ -18,7 +22,7 @@
 
     @include desktop() {
       @include size(100%, 23.125rem);
-      max-width: 1124px;
+      max-width: 70.25rem;
       display: flex;
       margin-bottom: 2.3125rem;
     }
@@ -46,13 +50,14 @@
         @include desktop() {
           @include fontSize(1rem, 400);
           @include size(26rem, null);
-          padding-bottom: 3.125rem;
+          padding-bottom: 2.5rem;
           border-bottom: 4px solid;
         }
       }
     }
 
     &--macbook {
+      
 
       &--img {
         @include size(10.75rem, null);
@@ -61,7 +66,7 @@
         z-index: 1;
 
         @include desktop() {
-          @include size(24.125rem, null);
+          @include size(24.1875rem, null);
           @include position(relative, 5rem, null, null, null);
           margin-right: 3.125rem;
         }
@@ -153,7 +158,8 @@
     margin-top: 2.875rem;
     @include desktop() {
       border-color: $third-color;
-      margin-right: 6.9375rem;
+      margin-right: 10.0625rem;
+      padding-bottom: 3.125rem;
     }
   }
 }

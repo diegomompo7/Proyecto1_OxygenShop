@@ -36,7 +36,7 @@
         @include position(relative, null, null, 2.1875rem, 65.7%);
         text-align: right;
         @include desktop(){
-            @include position(relative, null, null, 2.1875rem, 62.7%);
+            @include position(relative, null, null, 2.1875rem, 65.7%);
         }
         & img{
             @include size(1.5rem, null);

@@ -25,7 +25,10 @@
     }
 
     &--item {
-      @include margin(0, 100px);
+      @include margin(0, auto);
+      @include desktop(){
+        @include margin(0, 6.25rem);
+      }
       text-align: center;
       & h3 {
         @include fontFamily($first-font, "Arial", sans-serif);
@@ -36,7 +39,7 @@
       & p {
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.0625rem, 400);
-        margin-top: 1.25rem;
+        @include marginExact(1.25rem, 0, 1.5625rem, 0);
 
       }
     }

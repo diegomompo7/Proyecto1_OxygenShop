@@ -13,7 +13,7 @@
     @include desktop(){
 
       display: flex;
-      @include marginExact(4.25rem, 8.125rem, 16%, 16%);
+      @include marginExact(4.25rem, 16%, 8.1255rem, 16%);
       
     }
 
@@ -80,6 +80,7 @@
 
         @include desktop(){
           text-align: center;
+          width: 100%;
         }
 
 
@@ -93,8 +94,10 @@
           padding-bottom: 1.25rem;
           list-style: none;
 
+
           @include desktop(){
-            padding-bottom: 2.8vh;
+            padding-bottom: 20px;
+            
           }
         }
       }
@@ -109,7 +112,7 @@
           @include position(relative, null, null, null,5.625rem);
         }
         @include desktop(){
-          @include position(relative, 3.125rem, null, null, null);
+          @include position(relative, 3.625rem, null, null, null);
           margin-right: 10.625rem;
           justify-content: center;
           
@@ -147,7 +150,7 @@
   & h1 {
     color: $fifth-color;
     @include desktop(){
-      margin-bottom: 3.8125rem;
+      margin-bottom:3.4125rem;
     }
   }
   & button {
@@ -180,7 +183,7 @@
     }
   & p {
     @include desktop(){
-      margin-bottom: 3.125rem;
+      margin-bottom: 2.6875rem;
     }
   }
 
@@ -214,7 +217,7 @@
   }
   & p {
     @include desktop(){
-      margin-bottom: 3.125rem;
+      margin-bottom: 2.6875rem;
     }
   }
 

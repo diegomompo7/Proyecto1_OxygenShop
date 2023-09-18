@@ -125,6 +125,7 @@ body {
 }
 .header__nav--mobile a {
   text-decoration: none;
+  color: black;
 }
 .header__nav--desktop {
   display: none;
@@ -142,12 +143,15 @@ body {
   list-style: none;
   margin-left: 5.9375rem;
   padding-bottom: 1.5625rem;
+  -webkit-text-decoration: black;
+          text-decoration: black;
 }
 .header__nav--desktop li:hover {
   border-bottom: 4px solid #08A6E4;
 }
 .header__nav--desktop a {
   text-decoration: none;
+  color: black;
 }
 
 .main__container {
@@ -193,11 +197,11 @@ body {
   border-style: none;
 }
 .main__img {
-  margin: 36px 0 29px 0;
+  margin: 2.25rem 0 1.8125rem 0;
 }
 @media screen and (min-width: 62.5rem) {
   .main__img {
-    margin: 0 0 30px 0;
+    margin: 0 0 1.875rem 0;
     -o-object-position: 100%;
        object-position: 100%;
     height: 100%;
@@ -249,8 +253,13 @@ body {
   }
 }
 .sales__list--item {
-  margin: 0 100px;
+  margin: 0 auto;
   text-align: center;
+}
+@media screen and (min-width: 62.5rem) {
+  .sales__list--item {
+    margin: 0 6.25rem;
+  }
 }
 .sales__list--item h3 {
   font-family: "Raleway", "Arial", sans-serif;
@@ -263,7 +272,7 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 1.0625rem;
   font-weight: 400;
-  margin-top: 1.25rem;
+  margin: 1.25rem 0 1.5625rem 0;
 }
 
 .item__img {
@@ -310,6 +319,11 @@ body {
   background-color: #F7F7F7;
   padding: 3.5rem 0 6.25rem 0;
 }
+@media screen and (min-width: 62.5rem) {
+  .benefits {
+    padding-top: 6.6875rem;
+  }
+}
 .benefits__container {
   margin: 0 auto;
   width: 83.4%;
@@ -325,7 +339,7 @@ body {
   .benefits__container {
     width: 100%;
     height: 23.125rem;
-    max-width: 1124px;
+    max-width: 70.25rem;
     display: flex;
     margin-bottom: 2.3125rem;
   }
@@ -360,7 +374,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     width: 26rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 2.5rem;
     border-bottom: 4px solid;
   }
 }
@@ -373,7 +387,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .benefits__container--macbook--img {
-    width: 24.125rem;
+    width: 24.1875rem;
     position: relative;
     top: 5rem;
     margin-right: 3.125rem;
@@ -485,7 +499,8 @@ body {
 @media screen and (min-width: 62.5rem) {
   .macbook p {
     border-color: #FB3B64;
-    margin-right: 6.9375rem;
+    margin-right: 10.0625rem;
+    padding-bottom: 3.125rem;
   }
 }
 
@@ -550,7 +565,7 @@ body {
 @media screen and (min-width: 62.5rem) {
   .prices__plans {
     display: flex;
-    margin: 4.25rem 8.125rem 16% 16%;
+    margin: 4.25rem 16% 8.1255rem 16%;
   }
 }
 .prices__plans--items {
@@ -630,6 +645,7 @@ body {
 @media screen and (min-width: 62.5rem) {
   .prices__plans--items--features {
     text-align: center;
+    width: 100%;
   }
 }
 .prices__plans--items--features ul {
@@ -644,7 +660,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .prices__plans--items--features li {
-    padding-bottom: 2.8vh;
+    padding-bottom: 20px;
   }
 }
 .prices__plans--items button {
@@ -669,7 +685,7 @@ body {
 @media screen and (min-width: 62.5rem) {
   .prices__plans--items button {
     position: relative;
-    top: 3.125rem;
+    top: 3.625rem;
     margin-right: 10.625rem;
     justify-content: center;
   }
@@ -694,7 +710,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .basic h1 {
-    margin-bottom: 3.8125rem;
+    margin-bottom: 3.4125rem;
   }
 }
 .basic button {
@@ -720,7 +736,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .professional p {
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.6875rem;
   }
 }
 .professional button {
@@ -746,7 +762,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .premium p {
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.6875rem;
   }
 }
 .premium__button {
@@ -919,7 +935,7 @@ body {
   .footer__rrss {
     position: relative;
     bottom: 2.1875rem;
-    left: 62.7%;
+    left: 65.7%;
   }
 }
 .footer__rrss img {
