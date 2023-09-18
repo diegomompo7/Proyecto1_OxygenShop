@@ -52,7 +52,7 @@
     }
   }
   &__form {
-    @include size(83.2%, null);
+
     @include desktop(){
       @include size(51%, null);
     }
@@ -74,6 +74,13 @@
     }
     &--checkbox {
       width: 24px;
+      height: 24px;
+      border: 1px solid $tenth-color;
+      border-radius: 4px;
+
+      &:checked{
+        background-color: red;
+      }
     }
     &--conditions {
       @include fontFamily($second-font, "Arial", sans-serif);

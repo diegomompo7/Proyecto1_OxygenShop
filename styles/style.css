@@ -304,7 +304,7 @@ body {
   width: 83.4%;
   background-color: #FFFFFF;
 }
-@media screen and (min-width: 23.4375rem) and (max-width: 999px) {
+@media screen and (min-width: 27.5rem) {
   .benefits__container {
     max-width: 23.4375rem;
     width: 100%;
@@ -432,6 +432,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .benefits__container--trumpet {
+    float: left;
     width: 50%;
     height: 100%;
     margin-left: 3.8125rem;
@@ -492,12 +493,21 @@ body {
   }
 }
 
+@media screen and (min-width: 62.5rem) {
+  .trumpet--desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .trumpet {
   padding-top: 1.9375rem;
 }
 @media screen and (min-width: 62.5rem) {
   .trumpet {
     padding-left: 2.1875rem;
+    float: left;
+    flex: 1;
   }
 }
 @media screen and (min-width: 62.5rem) {
@@ -534,17 +544,16 @@ body {
   }
 }
 .prices__plans--items {
-  width: 100%;
+  width: 78.1%;
   height: 15.6875rem;
   margin: 0 auto;
   border-radius: 1.125rem;
   overflow: visible;
   margin-bottom: 2.25rem;
 }
-@media screen and (min-width: 23.25rem) {
+@media screen and (min-width: 27.5rem) {
   .prices__plans--items {
     max-width: 23.25rem;
-    width: 100%;
   }
 }
 @media screen and (min-width: 62.5rem) {
@@ -786,9 +795,6 @@ body {
   width: 1.375rem;
   margin-right: 0.4375rem;
 }
-.contact__form {
-  width: 83.2%;
-}
 @media screen and (min-width: 62.5rem) {
   .contact__form {
     width: 51%;
@@ -810,6 +816,12 @@ body {
 }
 .contact__form--checkbox {
   width: 24px;
+  height: 24px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+}
+.contact__form--checkbox:checked {
+  background-color: red;
 }
 .contact__form--conditions {
   font-family: "Open Sans", "Arial", sans-serif;

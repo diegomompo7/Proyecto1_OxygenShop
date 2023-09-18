@@ -11,7 +11,7 @@
     @include margin(0, auto);
     @include size(83.4%, null);
     background-color: $seventh-color;
-    @include min375() {
+    @include min440() {
       max-width: 23.4375rem;
       @include size(100%, null);
     }
@@ -120,6 +120,7 @@
         border-radius: 5px;
 
         @include desktop(){
+            float: left;
             @include size(50%, 100%);
             margin-left: 3.8125rem;
         }
@@ -172,10 +173,18 @@
     }
   }
 }
+.trumpet--desktop{
+  @include desktop(){
+    display: flex;
+    align-items: center;
+  }
+}
 .trumpet {
   padding-top: 1.9375rem;
   @include desktop() {
     padding-left: 2.1875rem;
+    float: left;
+    flex: 1;
   }
 
   & h1 {

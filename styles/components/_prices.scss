@@ -17,15 +17,14 @@
     }
 
     &--items {
-      @include size(100%, 15.6875rem);
+      @include size(78.1%, 15.6875rem);
       @include margin(0, auto);
       border-radius: 1.125rem;
       overflow: visible;
       margin-bottom: 2.25rem;
 
-      @include min372(){
+      @include min440(){
         max-width: 23.25rem;
-        @include size(100%, null);
       }
 
       @include desktop(){
