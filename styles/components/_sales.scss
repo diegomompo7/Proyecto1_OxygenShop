@@ -19,25 +19,24 @@
 
     @include desktop(){
       display: flex;
-      margin-top: 6.5625rem;
-      margin-bottom: 8.25rem;
+      justify-content: center;
+      margin-top: 6.25em;
+      margin-bottom: 7.875rem;
     }
 
     &--item {
-      @include margin(0, auto);
-      display: block;
+      @include margin(0, 100px);
       text-align: center;
       & h3 {
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.25rem, 800);
-        display: block;
         margin-top: 0.875rem;
         letter-spacing: 0.3725rem;
       }
       & p {
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.0625rem, 400);
-        @include marginExact(1.25rem, 0, 1.5625rem, 0);
+        margin-top: 1.25rem;
 
       }
     }
