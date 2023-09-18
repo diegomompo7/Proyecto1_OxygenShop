@@ -11,9 +11,13 @@
   &__plans {
     margin-top: 0.875rem;
     @include desktop(){
+
       display: flex;
       margin-top: 68px;
       margin-bottom: 130px;
+      margin-left: 16%;
+      margin-right: 16%;
+      
     }
 
     &--items {
@@ -28,21 +32,24 @@
       }
 
       @include desktop(){
+        max-width: 1266px;
         display: flex;
+        width: 29%;
         flex-direction: column;
         align-items: center;
         height: 30.3125rem;
-        margin: 0 auto;
+        margin-right: 5.3%;
         
       }
 
       &:hover {
-        @include size(90.4%, null);
+        @include size(90.3%, null);
         @include min405(){
           max-width: 25.3125rem;
           @include size(100%, null);
         }
         @include desktop(){
+        width: 32%;
          height: 31.25rem;
         }
       }
@@ -69,6 +76,7 @@
         @include desktop(){
           @include position(relative, 0, null, null, null);
           margin-top: 34px;
+          width: 100%
         }
       }
       &--features {
@@ -89,6 +97,10 @@
           list-style: none;
           @include fontFamily($second-font, "Arial", sans-serif);
           @include fontSize(0.875rem, 300);
+
+          @include desktop(){
+            padding-bottom: 2.8vh;
+          }
         }
       }
 
@@ -102,9 +114,10 @@
           @include position(relative, null, null, null,90px);
         }
         @include desktop(){
-          @include position(relative, 50px, null, null, null);
+          @include position(relative, 3.125rem, null, null, null);
           margin-right: 170px;
           justify-content: center;
+          
         }
         color: $seventh-color;
         border-radius: 23px;

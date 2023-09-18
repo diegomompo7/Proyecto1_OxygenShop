@@ -77,6 +77,12 @@ body {
   padding-top: 1.0625rem;
   color: #08A6E4;
 }
+@media screen and (min-width: 62.5rem) {
+  .header__title {
+    position: relative;
+    left: 8.6%;
+  }
+}
 .header__nav {
   font-size: 0.6875rem;
   font-weight: 700;
@@ -298,6 +304,7 @@ body {
 .benefits {
   background-color: #F7F7F7;
   padding-top: 3.5rem;
+  padding-bottom: 6.25rem;
 }
 .benefits__container {
   margin: 0 auto;
@@ -541,6 +548,8 @@ body {
     display: flex;
     margin-top: 68px;
     margin-bottom: 130px;
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }
 .prices__plans--items {
@@ -558,15 +567,17 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .prices__plans--items {
+    max-width: 1266px;
     display: flex;
+    width: 29%;
     flex-direction: column;
     align-items: center;
     height: 30.3125rem;
-    margin: 0 auto;
+    margin-right: 5.3%;
   }
 }
 .prices__plans--items:hover {
-  width: 90.4%;
+  width: 90.3%;
 }
 @media screen and (min-width: 25.3125rem) {
   .prices__plans--items:hover {
@@ -576,6 +587,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .prices__plans--items:hover {
+    width: 32%;
     height: 31.25rem;
   }
 }
@@ -607,6 +619,7 @@ body {
     position: relative;
     top: 0;
     margin-top: 34px;
+    width: 100%;
   }
 }
 .prices__plans--items--features {
@@ -627,6 +640,11 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
+}
+@media screen and (min-width: 62.5rem) {
+  .prices__plans--items--features li {
+    padding-bottom: 2.8vh;
+  }
 }
 .prices__plans--items button {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -650,7 +668,7 @@ body {
 @media screen and (min-width: 62.5rem) {
   .prices__plans--items button {
     position: relative;
-    top: 50px;
+    top: 3.125rem;
     margin-right: 170px;
     justify-content: center;
   }
@@ -874,6 +892,12 @@ body {
   position: relative;
   left: 5%;
 }
+@media screen and (min-width: 62.5rem) {
+  .footer__text {
+    position: relative;
+    left: 8%;
+  }
+}
 .footer__text--title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 1.625rem;
@@ -891,8 +915,15 @@ body {
   width: 27%;
   position: relative;
   bottom: 2.1875rem;
-  left: 68.7%;
+  left: 65.7%;
   text-align: right;
+}
+@media screen and (min-width: 62.5rem) {
+  .footer__rrss {
+    position: relative;
+    bottom: 2.1875rem;
+    left: 62.7%;
+  }
 }
 .footer__rrss img {
   width: 1.5rem;

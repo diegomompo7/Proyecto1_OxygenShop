@@ -13,7 +13,10 @@
     @include position(relative, null, null, null, 5%);
     padding-top: 1.0625rem;
     color: $first-color;
-  }
+    @include desktop(){
+      @include position(relative, null, null, null, 8.6%);
+    }
+  } 
   &__nav {
     @include fontSize(0.6875rem, 700);
     @include fontFamily($second-font, "Arial", sans-serif);

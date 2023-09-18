@@ -1,3 +1,7 @@
+@import "../utilities/variables";
+@import "../utilities/functions";
+@import "../utilities/mixins";
+
 .footer{
     @include size(100%, null);
     @include shadow(0px, -5px, 40px, 0px, rgba(0,0,0,0.2));
@@ -10,6 +14,10 @@
     &__text{
         @include size(73%, null);
         @include position(relative, null, null, null, 5%);
+        @include desktop(){
+            @include position(relative, null, null, null, 8%);
+        }
+
         &--title{
             @include fontFamily($first-font, "Arial", sans-serif);
             @include fontSize(1.625rem, 300);
@@ -25,8 +33,11 @@
 
     &__rrss{
         @include size(27%, null);
-        @include position(relative, null, null, 2.1875rem, 68.7%);
+        @include position(relative, null, null, 2.1875rem, 65.7%);
         text-align: right;
+        @include desktop(){
+            @include position(relative, null, null, 2.1875rem, 62.7%);
+        }
         & img{
             @include size(1.5rem, null);
             margin-right: 1.25rem;
