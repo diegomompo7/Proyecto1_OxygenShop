@@ -54,10 +54,6 @@
     }
 
     &--macbook {
-      @include size(100%, null);
-      display: inline;
-      @include desktop() {
-      }
 
       &--img {
         @include size(10.75rem, null);
@@ -103,7 +99,7 @@
 
         @include desktop() {
           width: 26.625rem;
-          margin-left: 12.5rem;
+          margin-left: 8.5rem;
         }
       }
       &--circleBlue {
@@ -113,7 +109,7 @@
 
         @include desktop() {
           width: 20rem;
-          @include position(relative, null, null, 19.5rem, 5rem);
+          @include position(relative, null, null, 19.5rem, 3rem);
         }
       }
     }
@@ -130,7 +126,7 @@
 
         &--img{
             @include size(15.3125rem, null);
-            @include position(relative, 3,125rem, null, null, null);
+            @include position(relative, 3.125rem, null, null, null);
             position: relative;
             z-index: 1;
 
@@ -171,7 +167,7 @@
   & p {
     margin-top: 1.125rem;
     @include desktop() {
-    margin-right: 1.25rem;
+    margin-right: 20.25rem;
     border-color: $first-color;
     }
   }

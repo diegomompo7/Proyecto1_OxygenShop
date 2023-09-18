@@ -10,9 +10,14 @@
   }
   &__plans {
     margin-top: 0.875rem;
+    @include desktop(){
+      display: flex;
+      margin-top: 68px;
+      margin-bottom: 130px;
+    }
 
     &--items {
-      @include size(78.1%, 15.6875rem);
+      @include size(100%, 15.6875rem);
       @include margin(0, auto);
       border-radius: 1.125rem;
       overflow: visible;
@@ -23,11 +28,23 @@
         @include size(100%, null);
       }
 
+      @include desktop(){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30.3125rem;
+        margin: 0 auto;
+        
+      }
+
       &:hover {
         @include size(90.4%, null);
         @include min405(){
           max-width: 25.3125rem;
           @include size(100%, null);
+        }
+        @include desktop(){
+         height: 31.25rem;
         }
       }
 
@@ -49,10 +66,20 @@
           @include fontFamily($first-font, "Arial", sans-serif);
           @include fontSize(0.72rem, 700);
         }
+
+        @include desktop(){
+          @include position(relative, 0, null, null, null);
+          margin-top: 34px;
+        }
       }
       &--features {
         @include size(51%, null);
         float: left;
+
+        @include desktop(){
+          text-align: center;
+        }
+
 
         & ul {
           margin-top: 1.5625rem;
@@ -75,10 +102,16 @@
         @include min372(){
           @include position(relative, null, null, null,90px);
         }
+        @include desktop(){
+          @include position(relative, 50px, null, null, null);
+          margin-right: 170px;
+          justify-content: center;
+        }
         color: $seventh-color;
         border-radius: 23px;
         cursor: pointer;
         border-style: none;
+
       }
     }
   }
@@ -96,8 +129,19 @@
     }
   }
 
+  &:hover{
+    .basic__cost {
+      @include desktop(){
+        margin-bottom: 72px;
+      }
+    }
+  }
+
   & h1 {
     color: $fifth-color;
+    @include desktop(){
+      margin-bottom: 61px;
+    }
   }
   & button {
     background-color: $fifth-color;
@@ -110,14 +154,27 @@
     @include shadow(5px, 10px, 27px, 0px, rgba(7, 172, 230, 0.29));
   }
 
-  &:hover{
+  &:hover {
     .professional__button {
       @include shadow(5px, 10px, 14px, 0px, rgba(7, 172, 230, 0.29));
     }
   }
 
+  &:hover{
+    .professional__description {
+      @include desktop(){
+        margin-bottom: 61px;
+      }
+    }
+  }
+
   & h1 {
     color: $sixth-color;
+    }
+  & p {
+    @include desktop(){
+      margin-bottom: 50px;
+    }
   }
 
   & button {
@@ -137,8 +194,21 @@
     }
   }
 
+  &:hover{
+    .premium__description {
+      @include desktop(){
+        margin-bottom: 61px;
+      }
+    }
+  }
+
   & h1 {
     color: $fourth-color;
+  }
+  & p {
+    @include desktop(){
+      margin-bottom: 50px;
+    }
   }
 
   &__button {

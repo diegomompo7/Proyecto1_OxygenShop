@@ -55,6 +55,7 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -352,10 +353,6 @@ body {
     border-bottom: 4px solid;
   }
 }
-.benefits__container--macbook {
-  width: 100%;
-  display: inline;
-}
 .benefits__container--macbook--img {
   width: 10.75rem;
   position: relative;
@@ -411,7 +408,7 @@ body {
 @media screen and (min-width: 62.5rem) {
   .benefits__container--phone--img {
     width: 26.625rem;
-    margin-left: 12.5rem;
+    margin-left: 8.5rem;
   }
 }
 .benefits__container--phone--circleBlue {
@@ -425,7 +422,7 @@ body {
     width: 20rem;
     position: relative;
     bottom: 19.5rem;
-    left: 5rem;
+    left: 3rem;
   }
 }
 .benefits__container--trumpet {
@@ -443,17 +440,17 @@ body {
 .benefits__container--trumpet--img {
   width: 15.3125rem;
   position: relative;
-  top: 50px;
+  top: 3.125rem;
   position: relative;
   z-index: 1;
 }
 @media screen and (min-width: 62.5rem) {
   .benefits__container--trumpet--img {
-    width: 265px;
-    height: 207px;
+    width: 16.5625rem;
+    height: 12.9375rem;
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 6.25rem;
+    left: 6.25rem;
   }
 }
 
@@ -462,12 +459,12 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .macbook {
-    padding-left: 35px;
+    padding-left: 2.1875rem;
   }
 }
 @media screen and (min-width: 62.5rem) {
   .macbook h1 {
-    padding-top: 91px;
+    padding-top: 5.6875rem;
   }
 }
 .macbook p {
@@ -476,13 +473,13 @@ body {
 @media screen and (min-width: 62.5rem) {
   .macbook p {
     border-color: #FB3B64;
-    margin-right: 111px;
+    margin-right: 6.9375rem;
   }
 }
 
 @media screen and (min-width: 62.5rem) {
   .phone h1 {
-    margin-top: 69px;
+    margin-top: 4.3125rem;
   }
 }
 .phone p {
@@ -490,7 +487,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .phone p {
-    margin-right: 20px;
+    margin-right: 20.25rem;
     border-color: #08A6E4;
   }
 }
@@ -500,12 +497,12 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .trumpet {
-    padding-left: 35px;
+    padding-left: 2.1875rem;
   }
 }
 @media screen and (min-width: 62.5rem) {
   .trumpet h1 {
-    margin-top: 69px;
+    margin-top: 4, 3125rem;
   }
 }
 .trumpet p {
@@ -529,8 +526,15 @@ body {
 .prices__plans {
   margin-top: 0.875rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .prices__plans {
+    display: flex;
+    margin-top: 68px;
+    margin-bottom: 130px;
+  }
+}
 .prices__plans--items {
-  width: 78.1%;
+  width: 100%;
   height: 15.6875rem;
   margin: 0 auto;
   border-radius: 1.125rem;
@@ -543,6 +547,15 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 62.5rem) {
+  .prices__plans--items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30.3125rem;
+    margin: 0 auto;
+  }
+}
 .prices__plans--items:hover {
   width: 90.4%;
 }
@@ -550,6 +563,11 @@ body {
   .prices__plans--items:hover {
     max-width: 25.3125rem;
     width: 100%;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .prices__plans--items:hover {
+    height: 31.25rem;
   }
 }
 .prices__plans--items--cost {
@@ -575,9 +593,21 @@ body {
   font-size: 0.72rem;
   font-weight: 700;
 }
+@media screen and (min-width: 62.5rem) {
+  .prices__plans--items--cost {
+    position: relative;
+    top: 0;
+    margin-top: 34px;
+  }
+}
 .prices__plans--items--features {
   width: 51%;
   float: left;
+}
+@media screen and (min-width: 62.5rem) {
+  .prices__plans--items--features {
+    text-align: center;
+  }
 }
 .prices__plans--items--features ul {
   margin-top: 1.5625rem;
@@ -608,6 +638,14 @@ body {
     left: 90px;
   }
 }
+@media screen and (min-width: 62.5rem) {
+  .prices__plans--items button {
+    position: relative;
+    top: 50px;
+    margin-right: 170px;
+    justify-content: center;
+  }
+}
 
 .basic {
   border: 1px solid #EB476E;
@@ -618,8 +656,18 @@ body {
 .basic:hover .basic__button {
   box-shadow: 5px 10px 14px 0px rgba(235, 71, 110, 0.29);
 }
+@media screen and (min-width: 62.5rem) {
+  .basic:hover .basic__cost {
+    margin-bottom: 72px;
+  }
+}
 .basic h1 {
   color: #EB476E;
+}
+@media screen and (min-width: 62.5rem) {
+  .basic h1 {
+    margin-bottom: 61px;
+  }
 }
 .basic button {
   background-color: #EB476E;
@@ -634,8 +682,18 @@ body {
 .professional:hover .professional__button {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
 }
+@media screen and (min-width: 62.5rem) {
+  .professional:hover .professional__description {
+    margin-bottom: 61px;
+  }
+}
 .professional h1 {
   color: #07ACE6;
+}
+@media screen and (min-width: 62.5rem) {
+  .professional p {
+    margin-bottom: 50px;
+  }
 }
 .professional button {
   background-color: #07ACE6;
@@ -650,8 +708,18 @@ body {
 .premium:hover .premium__button {
   box-shadow: 5px 10px 14px 0px rgba(85, 223, 180, 0.29);
 }
+@media screen and (min-width: 62.5rem) {
+  .premium:hover .premium__description {
+    margin-bottom: 61px;
+  }
+}
 .premium h1 {
   color: #55DFB4;
+}
+@media screen and (min-width: 62.5rem) {
+  .premium p {
+    margin-bottom: 50px;
+  }
 }
 .premium__button {
   background-color: #55DFB4;
@@ -667,11 +735,29 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 62.5rem) {
+  .contact {
+    max-width: 896px;
+    width: 100%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .contact__questions {
+    width: 49%;
+  }
+}
 .contact__questions--title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 0.3125rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .contact__questions--title {
+    font-size: 3.0625rem;
+    font-weight: 400;
+  }
 }
 .contact__questions--description {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -686,6 +772,14 @@ body {
   color: #A5A5A5;
   margin-bottom: 4rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .contact__questions--details {
+    display: inline-flex;
+  }
+}
+.contact__questions--details p {
+  margin-right: 20px;
+}
 .contact__questions--details img {
   position: relative;
   top: 5px;
@@ -694,6 +788,11 @@ body {
 }
 .contact__form {
   width: 83.2%;
+}
+@media screen and (min-width: 62.5rem) {
+  .contact__form {
+    width: 51%;
+  }
 }
 .contact__form--name, .contact__form--email {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -710,7 +809,7 @@ body {
   border-bottom: 1px solid #95989A;
 }
 .contact__form--checkbox {
-  width: 1.5rem;
+  width: 24px;
 }
 .contact__form--conditions {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -722,6 +821,11 @@ body {
   left: 2.1875rem;
   color: #707070;
   position: relative;
+}
+@media screen and (min-width: 62.5rem) {
+  .contact__form--conditions {
+    width: 100%;
+  }
 }
 .contact__form--send {
   width: 72.4%;
@@ -736,6 +840,14 @@ body {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   background-color: #08A6E4;
   color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .contact__form--send {
+    max-width: 226px;
+    width: 100%;
+    position: relative;
+    left: 180px;
+  }
 }
 
 .footer {
