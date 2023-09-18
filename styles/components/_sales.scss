@@ -37,7 +37,7 @@
       & p {
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.0625rem, 400);
-        @include marginExact(1.25rem, null, 1.5625rem, null);
+        @include marginExact(1.25rem, 0, 1.5625rem, 0);
 
       }
     }

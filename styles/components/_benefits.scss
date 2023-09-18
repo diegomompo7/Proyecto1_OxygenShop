@@ -4,7 +4,7 @@
 
 .benefits {
   background-color: $ninth-color;
-  @include paddingExact(3.5rem, null, 6.25rem, null);
+  @include paddingExact(3.5rem, 0, 6.25rem, 0);
 
 
   &__container {
@@ -18,7 +18,7 @@
 
     @include desktop() {
       @include size(100%, 23.125rem);
-      max-width: 70.25rem;
+      max-width: 1124px;
       display: flex;
       margin-bottom: 2.3125rem;
     }
@@ -47,7 +47,7 @@
           @include fontSize(1rem, 400);
           @include size(26rem, null);
           padding-bottom: 3.125rem;
-          border-bottom: 0.25rem solid;
+          border-bottom: 4px solid;
         }
       }
     }
@@ -97,7 +97,7 @@
         z-index: 1;
 
         @include desktop() {
-          @include size(26.625rem, null);
+          width: 26.625rem;
           margin-left: 8.5rem;
         }
       }
