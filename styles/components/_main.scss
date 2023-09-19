@@ -10,6 +10,9 @@
       @include size(100%, null);
       max-width: 27.5rem;
     }
+    @include desktop(){
+      margin-top: 130px
+    }
     &--title {
       @include fontFamily($first-font, "Arial", sans-serif);
       @include fontSize(2.1875rem, 400);
