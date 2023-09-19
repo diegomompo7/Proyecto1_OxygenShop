@@ -2,14 +2,14 @@
 @import "../utilities/functions";
 
 .prices {
-  margin-top: 3.375rem;
   &__title {
     @include fontFamily($first-font, "Arial", sans-serif);
     @include fontSize(2.25rem, 400);
+    margin-top: 1.5em;
+    margin-bottom: 0.38em;
     text-align: center;
   }
   &__plans {
-    margin-top: 0.875rem;
     @include desktop(){
 
       display: flex;
