@@ -65,16 +65,14 @@ body {
 .header {
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.29);
   width: 100%;
-  height: 4.375rem;
-  margin-bottom: 6.25rem;
+  height: 4.375em;
 }
 .header__title {
   font-size: 2rem;
   font-weight: 300;
   font-family: "Raleway", "Arial", sans-serif;
-  position: relative;
-  left: 5%;
-  padding-top: 1.0625rem;
+  padding-left: 5%;
+  padding-top: 0.5313em;
   color: #08A6E4;
 }
 @media screen and (min-width: 62.5rem) {
@@ -88,12 +86,12 @@ body {
   font-weight: 700;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.205rem;
+  letter-spacing: 0.2982em;
 }
 .header__nav svg {
   position: relative;
-  bottom: 4.375rem;
-  left: 89.1%;
+  bottom: 6.2em;
+  left: 86.6%;
   width: 1.25rem;
   fill: #07ACE6;
   cursor: pointer;
@@ -106,26 +104,30 @@ body {
 .header__nav svg:hover + .header__nav--mobile {
   display: block;
 }
+@media screen and (min-width: 62.5rem) {
+  .header__nav svg:hover + .header__nav--mobile {
+    display: none;
+  }
+}
 .header__nav--mobile {
   display: none;
   width: 100%;
-  height: 10.9375rem;
+  height: 15.96em;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
-  position: fixed;
-  top: 4.375rem;
+  position: relative;
+  bottom: 9em;
   background-color: #FFFFFF;
 }
 .header__nav--mobile li {
   position: relative;
-  top: 2.5rem;
-  left: 1.5625rem;
+  top: 22.77%;
+  left: 6.6%;
   list-style: none;
-  line-height: 0.9375rem;
-  margin-bottom: 0.875rem;
+  margin-bottom: 1.2727em;
 }
 .header__nav--mobile a {
   text-decoration: none;
-  color: black;
+  color: #A5A5A5;
 }
 .header__nav--desktop {
   display: none;
@@ -142,8 +144,8 @@ body {
 .header__nav--desktop li {
   list-style: none;
   margin-left: 5.9375rem;
-  -webkit-text-decoration: black;
-          text-decoration: black;
+  -webkit-text-decoration: #A5A5A5;
+          text-decoration: #A5A5A5;
   padding-bottom: 25px;
 }
 .header__nav--desktop li:hover {
@@ -151,7 +153,7 @@ body {
 }
 .header__nav--desktop a {
   text-decoration: none;
-  color: black;
+  color: #A5A5A5;
 }
 
 .main__container {
@@ -161,7 +163,7 @@ body {
 @media screen and (min-width: 27.5rem) {
   .main__container {
     width: 100%;
-    max-width: 27.5rem;
+    max-width: 27.5em;
   }
 }
 @media screen and (min-width: 62.5rem) {
@@ -173,6 +175,8 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 2.1875rem;
   font-weight: 400;
+  margin-top: 2.8571em;
+  padding-bottom: 0.5714em;
   text-align: center;
 }
 @media screen and (min-width: 62.5rem) {
@@ -185,13 +189,12 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  padding-bottom: 2.75em;
   text-align: center;
-  padding-top: 1.25rem;
 }
 .main__container--button {
-  margin-top: 3.25rem;
   width: 100%;
-  padding: 1.375rem 0;
+  padding: 1.375em 0;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 1rem;
@@ -202,7 +205,8 @@ body {
   border-style: none;
 }
 .main__img {
-  margin: 2.25rem 0 1.8125rem 0;
+  font-size: 14px;
+  margin-top: 1.57em;
 }
 @media screen and (min-width: 62.5rem) {
   .main__img {
@@ -213,9 +217,9 @@ body {
   }
 }
 .main__img img {
-  padding: 1.5em 0 2.3125rem 0;
+  padding: 2em 0 0 0;
   width: 100%;
-  height: 20.625rem;
+  height: 20.625em;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -238,6 +242,7 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 1.875rem;
   font-weight: 300;
+  margin-top: 0.43em;
   text-align: center;
 }
 @media screen and (min-width: 62.5rem) {

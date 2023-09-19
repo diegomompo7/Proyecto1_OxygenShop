@@ -9,6 +9,7 @@
   &__title {
     @include fontFamily($first-font, "Arial", sans-serif);
     @include fontSize(1.875rem, 300);
+    margin-top: 0.43em;
     text-align: center;
     @include desktop(){
       @include fontSize(2.25rem, 400);

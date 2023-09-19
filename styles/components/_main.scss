@@ -8,7 +8,7 @@
     @include size(82.6%, null);
     @include min440(){
       @include size(100%, null);
-      max-width: 27.5rem;
+      max-width: 27.5em;
     }
     @include desktop(){
       margin-top: 130px
@@ -16,6 +16,8 @@
     &--title {
       @include fontFamily($first-font, "Arial", sans-serif);
       @include fontSize(2.1875rem, 400);
+      margin-top: 2.8571em;
+      padding-bottom: 0.5714em;
       text-align: center;
 
       @include desktop(){
@@ -25,13 +27,12 @@
     &--subtitle {
       @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(1rem, 400);
+      padding-bottom: 2.75em;
       text-align: center;
-      padding-top: 1.25rem;
     }
     &--button {
-      margin-top: 3.25rem;
       @include size(100%, null);
-      @include padding(1.375rem, 0);
+      @include padding(1.375em, 0);
       @include shadow(5px, 10px, 14px, 0px, rgba(7, 172, 230, 0.29));
       @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(1rem, 700);
@@ -42,7 +43,8 @@
     }
   }
   &__img {
-      @include marginExact(2.25rem, 0, 1.8125rem, 0);
+      font-size: 14px;
+      margin-top: 1.57em;
 
       @include desktop(){
         @include marginExact(0, 0, 1.875rem, 0);
@@ -51,9 +53,9 @@
       }
 
     & img {
-      @include paddingExact(1.5em, 0, 2.3125rem, 0);
+      @include paddingExact(2em, 0, 0, 0);
       width: 100%;
-      height: 20.625rem;
+      height: 20.625em;
       object-fit: cover;
       object-position: center;
 
