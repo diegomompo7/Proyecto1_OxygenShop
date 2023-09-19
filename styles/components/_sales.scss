@@ -10,13 +10,13 @@
     @include fontFamily($first-font, "Arial", sans-serif);
     @include fontSize(1.875rem, 300);
     margin-top: 0.43em;
+    padding-bottom: 1.1em;
     text-align: center;
     @include desktop(){
       @include fontSize(2.25rem, 400);
     }
   }
   &__list {
-    margin-top: 1.5625rem;
 
     @include desktop(){
       display: flex;
@@ -34,48 +34,70 @@
       & h3 {
         @include fontFamily($first-font, "Arial", sans-serif);
         @include fontSize(1.25rem, 800);
-        margin-top: 0.875rem;
-        letter-spacing: 0.3725rem;
+        margin-top: 0.65em;
+        letter-spacing: 0.298rem;
       }
       & p {
         @include fontFamily($first-font, "Arial", sans-serif);
-        @include fontSize(1.0625rem, 400);
-        @include marginExact(1.25rem, 0, 1.5625rem, 0);
-
+        @include marginExact(1.17em, 0, 1.47em, 0);
       }
     }
   }
 }
 .item__img {
-  @include size(100%, 4.375rem);
+  @include size(100%, 4.375em);
 
   &--circle {
-    @include size(null, 3.9375rem);
+    @include size(null, 3.9375em);
     @include margin(0,auto);
     display: block;
   }
 
   &--person {
-    @include size(2.75rem, null);
-    @include position(relative, null, null, 3.75rem, 1.5625rem);
+    @include size(2.75em, null);
+    @include position(relative, null, null, 83%, 20%);
   }
   &--eye {
-    @include size(4.0625rem, null);
-    @include position(relative, null, null, 3.125rem, 1.25rem);
+    @include size(4.0625em, null);
+    @include position(relative, null, null, 70%, 10%);
   }
   &--catalog {
-    @include size(3.25rem, null);
-    @include position(relative, null, null, 3.5rem, 1.5625rem);
+    @include size(3.25em, null);
+    @include position(relative, null, null, 80%, 15%);
   }
 }
 .person{
-  @include size(7.3125rem, null);
+  @include size(7.31em, null);
+  & p{
+    @include size(90.7%, null);
+    @include fontSize(1.0625rem, 400);
+    padding-left: 0.65em;
+  }
 }
 .eye{
-  @include size(11rem, null);
+  @include size(11em, null);
+  & h3{
+    @include size(88.6%, null);
+    padding-left: 1em;
+  }
+  & p{
+    @include size(82.3%, null);
+    @include fontSize(1rem, 400);
+    padding-left: 2.06em;
+  }
 }
 .catalog{
-  @include size(10.1875rem, null);
+  @include size(10.18em, null);
+  & h3{
+    @include size(79.7%, null);
+    padding-left: 1.6em;
+  }
+  & p{
+    @include size(81.5%, null);
+    @include fontSize(1.0625rem, 400);
+    padding-left: 1.94em;
+    margin-bottom: 2.94em;
+  }
 }
 
 

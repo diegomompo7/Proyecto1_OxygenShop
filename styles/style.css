@@ -243,6 +243,7 @@ body {
   font-size: 1.875rem;
   font-weight: 300;
   margin-top: 0.43em;
+  padding-bottom: 1.1em;
   text-align: center;
 }
 @media screen and (min-width: 62.5rem) {
@@ -250,9 +251,6 @@ body {
     font-size: 2.25rem;
     font-weight: 400;
   }
-}
-.sales__list {
-  margin-top: 1.5625rem;
 }
 @media screen and (min-width: 62.5rem) {
   .sales__list {
@@ -275,54 +273,79 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 1.25rem;
   font-weight: 800;
-  margin-top: 0.875rem;
-  letter-spacing: 0.3725rem;
+  margin-top: 0.65em;
+  letter-spacing: 0.298rem;
 }
 .sales__list--item p {
   font-family: "Raleway", "Arial", sans-serif;
-  font-size: 1.0625rem;
-  font-weight: 400;
-  margin: 1.25rem 0 1.5625rem 0;
+  margin: 1.17em 0 1.47em 0;
 }
 
 .item__img {
   width: 100%;
-  height: 4.375rem;
+  height: 4.375em;
 }
 .item__img--circle {
-  height: 3.9375rem;
+  height: 3.9375em;
   margin: 0 auto;
   display: block;
 }
 .item__img--person {
-  width: 2.75rem;
+  width: 2.75em;
   position: relative;
-  bottom: 3.75rem;
-  left: 1.5625rem;
+  bottom: 83%;
+  left: 20%;
 }
 .item__img--eye {
-  width: 4.0625rem;
+  width: 4.0625em;
   position: relative;
-  bottom: 3.125rem;
-  left: 1.25rem;
+  bottom: 70%;
+  left: 10%;
 }
 .item__img--catalog {
-  width: 3.25rem;
+  width: 3.25em;
   position: relative;
-  bottom: 3.5rem;
-  left: 1.5625rem;
+  bottom: 80%;
+  left: 15%;
 }
 
 .person {
-  width: 7.3125rem;
+  width: 7.31em;
+}
+.person p {
+  width: 90.7%;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  padding-left: 0.65em;
 }
 
 .eye {
-  width: 11rem;
+  width: 11em;
+}
+.eye h3 {
+  width: 88.6%;
+  padding-left: 1em;
+}
+.eye p {
+  width: 82.3%;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 2.06em;
 }
 
 .catalog {
-  width: 10.1875rem;
+  width: 10.18em;
+}
+.catalog h3 {
+  width: 79.7%;
+  padding-left: 1.6em;
+}
+.catalog p {
+  width: 81.5%;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  padding-left: 1.94em;
+  margin-bottom: 2.94em;
 }
 
 .benefits {
