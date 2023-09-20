@@ -40,6 +40,7 @@
       & p {
         @include fontFamily($first-font, "Arial", sans-serif);
         @include marginExact(1.17em, 0, 1.47em, 0);
+        color: $eighth-color
       }
     }
   }
