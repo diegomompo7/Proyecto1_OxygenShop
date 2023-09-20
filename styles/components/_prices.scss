@@ -18,11 +18,11 @@
     }
 
     &--items {
-      @include size(78.1%, 15.6875rem);
+      @include size(78.1%, 15.6875em);
       @include margin(0, auto);
       border-radius: 1.125rem;
       overflow: visible;
-      margin-bottom: 2.25rem;
+      margin-bottom: 3.5em;
 
       @include min440(){
         max-width: 23.25rem;
@@ -39,7 +39,16 @@
       }
 
       &:hover {
-        @include size(90.3%, null);
+        @include size(90.3%, 17.3125em);
+        .prices__plans--items--features--list{
+          margin-top: 3.643em;
+        }
+        .prices__plans--items--cost--title{
+          padding-top: 4.55em;
+        }
+        .prices__plans--items--button{
+          margin-left: 27.7%;
+        }
         @include min405(){
           max-width: 25.3125rem;
           @include size(100%, null);
@@ -51,13 +60,13 @@
 
       &--cost {
         @include size(49%, null);
-        @include position(relative, 4.375rem, null, null, null);
         @include margin(0, auto);
         float: left;
         text-align: center;
         & h3 {
           @include fontFamily($first-font, "Arial", sans-serif);
           @include fontSize(1.25rem, 700);
+          padding-top: 3.5em;
         }
         & h1 {
           @include fontFamily($second-font, "Arial", sans-serif);
@@ -85,13 +94,13 @@
 
 
         & ul {
-          margin-top: 1.5625rem;
+          @include fontSize(0.875rem, 300);
+          margin-top: 1.786em;
         }
 
         & li {
           @include fontFamily($second-font, "Arial", sans-serif);
-          @include fontSize(0.875rem, 300);
-          padding-bottom: 1.25rem;
+          padding-bottom: 1.429em;
           list-style: none;
 
 
@@ -105,12 +114,11 @@
       & button {
         @include fontFamily($second-font, "Arial", sans-serif);
         @include fontSize(0.8125rem, 600);
-        @include size(9.375rem, 3.125rem);
-        @include position(relative, null, null, null, 3.75rem);
-
-        @include min372(){
-          @include position(relative, null, null, null,5.625rem);
-        }
+        @include padding(1.231em, 4.385em); 
+        position: relative;
+        margin-left:24.2%;
+  
+      
         @include desktop(){
           @include position(relative, 3.625rem, null, null, null);
           margin-right: 10.625rem;
