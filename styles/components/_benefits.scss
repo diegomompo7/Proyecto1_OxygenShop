@@ -7,7 +7,7 @@
   @include paddingExact(3.5em, 0, 6.25em, 0);
 
   @include desktop{
-    padding-top: 6.6875rem
+    padding-top: 6.6875em
   }
 
 
@@ -16,18 +16,22 @@
     @include size(83.4%, null);
     background-color: $seventh-color;
     @include min440() {
-      max-width: 23.4375rem;
+      max-width: 23.4375em;
       @include size(100%, null);
     }
 
     @include desktop() {
-      @include size(100%, 23.125rem);
-      max-width: 70.25rem;
+      @include size(100%, 23.125em);
+      max-width: 70.25em;
       display: flex;
-      margin-bottom: 2.3125rem;
+      justify-content: start;
+      margin-bottom: 2.3125em;
     }
 
     &--text {
+      @include desktop(){
+        width: 416px;
+      }
 
       & h1 {
         @include size(87.2%, null);
@@ -36,7 +40,8 @@
         margin-left: 0.73em;
         @include desktop() {
           @include fontSize(2.25rem, 400);
-          margin-bottom: 1.875rem;
+          width: auto;
+          margin-left: 0;
         }
       }
 
@@ -45,10 +50,17 @@
         @include fontFamily($second-font, "Arial", sans-serif);
         margin-left: 1.5em;
         @include desktop() {
-          @include fontSize(1rem, 400);
-          @include size(26rem, null);
-          padding-bottom: 2.5rem;
-          border-bottom: 4px solid;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+      & hr{
+        visibility: hidden;
+
+        @include desktop(){
+          width: 327px;
+          visibility: visible;
+          border: 2px solid;
         }
       }
     }
@@ -56,6 +68,13 @@
     &--macbook {
       height: 9.18em;
       width: 16.875em;
+
+      @include desktop(){
+        @include fontSize(1rem, 400);
+        width: 57%;
+        padding-left: 9em;
+        
+      }
       
 
       &--img {
@@ -63,9 +82,10 @@
         @include position(relative, null, 1em, 4.5em, null);
 
         @include desktop() {
-          @include size(24.1875rem, null);
-          @include position(relative, null, null, null, null);
-          margin-right: 3.125rem;
+          @include size(387px, null);
+          position: block;
+          bottom: 7em;
+      
         }
       }
       &--rectanguleRed {
@@ -81,18 +101,23 @@
       &--rectanguleRed2 {
         visibility: hidden;
         @include size(4.375rem, null);
-        @include position(relative, null, null, 11.4375rem, 17.5rem);
         z-index: 0;
 
         @include desktop() {
           visibility: visible;
-          @include size(11.25rem, null);
+          @include position(relative, 4em, null, null, 10em);
+          margin-left: 2em;
+          @include size(225px, null);
         }
       }
     }
     &--phone {
-      @include size(100%, null);
       @include size(15.5625em, 8.125em);
+
+      @include desktop(){
+        @include size(100%, 8.125em);
+        padding-right: 390px
+      }
 
       &--img {
         @include size(10.9375em, null);
@@ -100,8 +125,9 @@
         z-index: 1;
 
         @include desktop() {
-          width: 26.625rem;
-          margin-left: 8.5rem;
+          width: 90%;
+          @include position(relative, null, null, 19rem, 5em);
+          
         }
       }
       &--circleBlue {
@@ -112,8 +138,9 @@
         z-index: 0;
 
         @include desktop() {
-          @include size(20rem, null);
-          @include position(relative, null, null, 19.5rem, 3rem);
+          @include size(70%, null);
+          margin-left: 70px;
+          
         }
       }
     }
@@ -160,11 +187,17 @@
     margin-top: 3.35em;
     margin-bottom: 2.14em;
     padding-bottom: 2.14em;
-    @include fontSize(0.875rem, 400);
     @include desktop() {
+      @include fontSize(1rem, 400);
+      margin-top: 1.5em;
+      margin-bottom: 0;
+      padding-bottom: 3.125em;
+      
+    }
+  }
+  & hr {
+    @include desktop(){
       border-color: $third-color;
-      margin-right: 10.0625rem;
-      padding-bottom: 3.125rem;
     }
   }
 }
@@ -173,7 +206,8 @@
   & h1 {
     padding-top: 0.9em;
     @include desktop() {
-    margin-top: 4.3125rem;
+    padding-top: 1.917em;
+    width: 61.5%
     }
   }
   & p {
@@ -181,10 +215,17 @@
     margin-top: 1.28em;
     margin-bottom: 2.14em;
     padding-bottom: 2.14em;
-    @include fontSize(0.875rem, 400);
     @include desktop() {
-    margin-right: 20.25rem;
-    border-color: $first-color;
+      @include fontSize(1rem, 400);
+      margin-top: 1.5em;
+      margin-bottom: 0;
+      padding-bottom: 3.125em;
+      
+    }
+  }
+  & hr {
+    @include desktop(){
+      border-color: $first-color;
     }
   }
 }
