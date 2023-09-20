@@ -13,7 +13,7 @@
     padding-top: 0.5313em;
     color: $first-color;
     @include desktop(){
-      @include position(relative, null, null, null, 8.43%);
+      padding-left: 4.250em;
     }
 
   } 
@@ -25,7 +25,7 @@
     & svg {
       @include fontSize(2rem, 300);
       @include position(relative, null, null, 2.094em, 86.6%);
-      @include size(1.25rem, null);
+      @include size(0.625em, null);
       fill: $sixth-color;
       cursor: pointer;
 

@@ -77,8 +77,7 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .header__title {
-    position: relative;
-    left: 8.43%;
+    padding-left: 4.25em;
   }
 }
 .header__nav {
@@ -94,7 +93,7 @@ body {
   position: relative;
   bottom: 2.094em;
   left: 86.6%;
-  width: 1.25rem;
+  width: 0.625em;
   fill: #07ACE6;
   cursor: pointer;
 }
