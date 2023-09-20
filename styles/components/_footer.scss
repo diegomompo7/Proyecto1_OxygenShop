@@ -6,14 +6,12 @@
     @include size(100%, null);
     @include shadow(0px, -5px, 40px, 0px, rgba(0,0,0,0.2));
     background-color: $ninth-color;
-    margin-top: 2.75rem;
+    margin-top: 2.75em;
     overflow: visible;
     
     
 
     &__text{
-        @include size(73%, null);
-        @include position(relative, null, null, null, 5%);
         @include desktop(){
             @include position(relative, null, null, null, 8%);
         }
@@ -22,25 +20,29 @@
             @include fontFamily($first-font, "Arial", sans-serif);
             @include fontSize(1.625rem, 300);
             color: $first-color;
+            padding-left: 0.654em;
             padding-top: 1.375rem;
         }
         &--description{
             @include fontFamily($second-font, "Arial", sans-serif);
             @include fontSize(0.6875rem, 300);
+            padding-left: 1.545em;
             color: $eighth-color;
         }
     }
 
     &__rrss{
-        @include size(27%, null);
-        @include position(relative, null, null, 2.1875rem, 65.7%);
+        @include fontSize(1.625rem, 300);
+        @include position(relative, null, null, 1.615em, null);
         text-align: right;
+        padding-right: 0.385em;
         @include desktop(){
             @include position(relative, null, null, 2.1875rem, 65.7%);
         }
         & img{
-            @include size(1.5rem, null);
-            margin-right: 1.25rem;
+            @include size(0.923em, null);
+            margin-right: 0.769em;
+            
         }
 
     }

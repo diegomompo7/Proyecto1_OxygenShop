@@ -3,9 +3,7 @@
 @import "../utilities/mixins";
 
 .contact {
-  @include fontSize(2.5rem, 400);
-  padding-left: 0.75em;
-  padding-top: 0.575em;
+  padding-left: 1.875rem;
   @include margin (0 , auto);
   @include min440(){
     max-width: 27.5rem;
@@ -25,6 +23,7 @@
     &--title {
       @include fontFamily($first-font, "Arial", sans-serif);
       @include fontSize(2.5rem, 400);
+      padding-top: 0.575em;
       margin-bottom: 0.125em;
       @include desktop(){
         @include fontSize(3.0625rem, 400);
@@ -74,18 +73,24 @@
       }
     }
     &--checkbox {
+      @include fontSize(0.75rem, 400);
       @include size(1.5rem, 1.5rem);
-      position: block;
+      margin-top: 2.917em;
+      float: left;
+    
       border: 1px solid $tenth-color;
       border-radius: 4px;
     }
     &--conditions {
+      width: 88.78%;
       @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(0.75rem, 400);
-      @include size(78.6%, null);
-      @include position(relative, null, null, null, 2.917em);
+      margin-top: 2.583em;
+      padding-left: 10px;
+      padding-bottom: 2.750em;
+      float:left;
+
       color: $eleventh-color;
-      position: relative;
       @include desktop(){
         @include size(100%, null);
       }

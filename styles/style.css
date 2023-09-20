@@ -71,7 +71,7 @@ body {
   font-size: 2rem;
   font-weight: 300;
   font-family: "Raleway", "Arial", sans-serif;
-  padding-left: 5%;
+  padding-left: 0.781em;
   padding-top: 0.5313em;
   color: #08A6E4;
 }
@@ -89,8 +89,10 @@ body {
   letter-spacing: 0.2982em;
 }
 .header__nav svg {
+  font-size: 2rem;
+  font-weight: 300;
   position: relative;
-  bottom: 6.2em;
+  bottom: 2.094em;
   left: 86.6%;
   width: 1.25rem;
   fill: #07ACE6;
@@ -820,10 +822,7 @@ body {
 }
 
 .contact {
-  font-size: 2.5rem;
-  font-weight: 400;
-  padding-left: 0.75em;
-  padding-top: 0.575em;
+  padding-left: 1.875rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 27.5rem) {
@@ -848,6 +847,7 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
+  padding-top: 0.575em;
   margin-bottom: 0.125em;
 }
 @media screen and (min-width: 62.5rem) {
@@ -902,21 +902,25 @@ body {
   border-bottom: 1px solid #95989A;
 }
 .contact__form--checkbox {
+  font-size: 0.75rem;
+  font-weight: 400;
   width: 1.5rem;
   height: 1.5rem;
-  position: block;
+  margin-top: 2.917em;
+  float: left;
   border: 1px solid #95989A;
   border-radius: 4px;
 }
 .contact__form--conditions {
+  width: 88.78%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
-  width: 78.6%;
-  position: relative;
-  left: 2.917em;
+  margin-top: 2.583em;
+  padding-left: 10px;
+  padding-bottom: 2.75em;
+  float: left;
   color: #707070;
-  position: relative;
 }
 @media screen and (min-width: 62.5rem) {
   .contact__form--conditions {
@@ -948,13 +952,8 @@ body {
   width: 100%;
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
   background-color: #F7F7F7;
-  margin-top: 2.75rem;
+  margin-top: 2.75em;
   overflow: visible;
-}
-.footer__text {
-  width: 73%;
-  position: relative;
-  left: 5%;
 }
 @media screen and (min-width: 62.5rem) {
   .footer__text {
@@ -967,20 +966,23 @@ body {
   font-size: 1.625rem;
   font-weight: 300;
   color: #08A6E4;
+  padding-left: 0.654em;
   padding-top: 1.375rem;
 }
 .footer__text--description {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.6875rem;
   font-weight: 300;
+  padding-left: 1.545em;
   color: #A5A5A5;
 }
 .footer__rrss {
-  width: 27%;
+  font-size: 1.625rem;
+  font-weight: 300;
   position: relative;
-  bottom: 2.1875rem;
-  left: 65.7%;
+  bottom: 1.615em;
   text-align: right;
+  padding-right: 0.385em;
 }
 @media screen and (min-width: 62.5rem) {
   .footer__rrss {
@@ -990,6 +992,6 @@ body {
   }
 }
 .footer__rrss img {
-  width: 1.5rem;
-  margin-right: 1.25rem;
+  width: 0.923em;
+  margin-right: 0.769em;
 }/*# sourceMappingURL=style.css.map */
