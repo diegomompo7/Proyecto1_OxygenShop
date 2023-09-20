@@ -59,12 +59,16 @@
         text-decoration: none;
         color: $eighth-color;
 
+        &:hover{
+          color: $second-color;
+      }
+
       }
     }
     &--desktop {
       display: none;
-      @include position(relative, null, 7%, 1.6875rem, null);
-
+      @include position(relative, null, null, 2.455em, null);
+      padding-right: 10.455em;
       @include desktop() {
         display: flex;
         justify-content: end;
@@ -72,19 +76,25 @@
 
       & li {
         list-style: none;
-        margin-left: 5.9375rem;
+        margin-left: 8.636em;
         text-decoration: $eighth-color;
-        padding-bottom: 25px;
+        padding-bottom: 2.273em;
 
         &:hover{
             border-bottom: 4px solid $first-color;
+            color: $second-color;
         }
       }
 
       & a {
         text-decoration: none;
         color: $eighth-color;
+
+        &:hover{
+          color: $second-color;
+      }
       }
     }
   }
 }
+
