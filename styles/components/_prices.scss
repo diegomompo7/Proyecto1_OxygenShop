@@ -53,8 +53,13 @@
         @include desktop() {
           @include size(31.9%, 524px);
           margin-top: 35px;
-          .prices__plans--items--features--list {
+          .features__basic {
             margin-top: 0;
+            padding-bottom: 24px;
+          }
+          .features__professional, .features__premium {
+            margin-top: 0;
+            padding-bottom: 18px;
           }
           .prices__plans--items--features--list li {
             padding-bottom: 25px;
@@ -128,7 +133,7 @@
         margin-left: 24.2%;
 
         @include desktop() {
-          margin: 0 auto;
+          @include margin(0, auto);
           display: block;
         }
 
@@ -174,20 +179,6 @@
   }
   & button {
     background-color: $fifth-color;
-  }
-}
-
-.features:hover {
-  .features__basic {
-    @include desktop() {
-      padding-bottom: 24px;
-    }
-  }
-  .features__professional,
-  .features__premium {
-    @include desktop() {
-      padding-bottom: 18px;
-    }
   }
 }
 
