@@ -1070,12 +1070,6 @@ body {
   margin-top: 2.75em;
   overflow: visible;
 }
-@media screen and (min-width: 62.5rem) {
-  .footer__text {
-    position: relative;
-    left: 8%;
-  }
-}
 .footer__text--title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 1.625rem;
@@ -1084,12 +1078,24 @@ body {
   padding-left: 0.654em;
   padding-top: 1.375rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .footer__text--title {
+    padding-left: 5.269em;
+    padding-top: 0.769em;
+    padding-bottom: 0.269em;
+  }
+}
 .footer__text--description {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.6875rem;
   font-weight: 300;
   padding-left: 1.545em;
   color: #A5A5A5;
+}
+@media screen and (min-width: 62.5rem) {
+  .footer__text--description {
+    padding-left: 12.455em;
+  }
 }
 .footer__rrss {
   font-size: 1.625rem;
@@ -1102,8 +1108,8 @@ body {
 @media screen and (min-width: 62.5rem) {
   .footer__rrss {
     position: relative;
-    bottom: 2.1875rem;
-    left: 65.7%;
+    bottom: 1.615em;
+    padding-right: 5.231em;
   }
 }
 .footer__rrss img {
