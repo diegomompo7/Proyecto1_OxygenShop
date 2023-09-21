@@ -9,8 +9,7 @@
   &__title {
     @include fontSize(2rem, 300);
     @include fontFamily($first-font, "Arial", sans-serif);
-    padding-left: 0.781em;
-    padding-top: 0.5313em;
+    @include paddingExact(0.5313em, 0, 0, 0.781em);
     color: $first-color;
     @include desktop(){
       padding-left: 4.250em;
@@ -68,7 +67,7 @@
     &--desktop {
       display: none;
       @include position(relative, null, null, 2.455em, null);
-      padding-right: 10.455em;
+      padding-right: 7.4%;
       @include desktop() {
         display: flex;
         justify-content: end;

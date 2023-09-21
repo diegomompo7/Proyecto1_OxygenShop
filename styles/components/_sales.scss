@@ -8,7 +8,7 @@
   @include margin(0, auto);
   @include desktop(){
     max-width: 67.25em;
-    width: 100%;
+    @include size(100%, null);
   }
 
   &__title {
@@ -33,9 +33,6 @@
 
     &--item {
       @include margin(0, auto);
-      @include desktop(){
-        
-      }
       text-align: center;
       & h3 {
         @include fontFamily($first-font, "Arial", sans-serif);
