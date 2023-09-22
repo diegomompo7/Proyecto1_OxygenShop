@@ -44,8 +44,13 @@
       @include fontSize(1rem, 500);
       color: $eighth-color;
       @include desktop() {
-        display: inline-flex;
-        margin-right: 1.25em;
+        display: flex;
+      }
+
+      & p {
+        @include desktop() {
+          padding-right: 1.25em;
+        }
       }
 
       & img {
@@ -96,6 +101,7 @@
       border: 1px solid $tenth-color;
       border-radius: 4px;
     }
+    
     &--conditions {
       width: 88.78%;
       @include fontFamily($second-font, "Arial", sans-serif);
@@ -109,6 +115,7 @@
         @include size(93.8%, null);
       }
     }
+
     &--send {
       @include fontFamily($second-font, "Arial", sans-serif);
       @include fontSize(0.8125rem, 600);

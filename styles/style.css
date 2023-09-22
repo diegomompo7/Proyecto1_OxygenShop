@@ -974,8 +974,12 @@ body {
 }
 @media screen and (min-width: 62.5rem) {
   .contact__questions--details {
-    display: inline-flex;
-    margin-right: 1.25em;
+    display: flex;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .contact__questions--details p {
+    padding-right: 1.25em;
   }
 }
 .contact__questions--details img {
