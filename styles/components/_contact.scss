@@ -45,6 +45,7 @@
       color: $eighth-color;
       @include desktop() {
         display: inline-flex;
+        margin-right: 1.25em;
       }
 
       & img {
